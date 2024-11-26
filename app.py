@@ -19,6 +19,9 @@ def download_json():
 @app.route("/set_three/<string:input_string>", methods=["GET"])
 def set_three(input_string):
     try:
+        f = open("arbre_decisions.txt","w")
+        f.write(input_string)
+        f.close()
         return jsonify({"result": input_string}), 200
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500
