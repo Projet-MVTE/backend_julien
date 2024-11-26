@@ -8,7 +8,7 @@ def home():
     return jsonify({"message": "Coucou dina et jojo"}), 200
     
 # Route pour télécharger un fichier JSON
-@app.route("/download-json", methods=["GET"])
+@app.route("/download_three", methods=["GET"])
 def download_json():
     json_file_path = "arbre.json"
     try:
