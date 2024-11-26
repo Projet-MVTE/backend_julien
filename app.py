@@ -34,18 +34,16 @@ if __name__ == "__main__":
     app.run(host="0.0.0.0", port=port)
 """
 
-
-
 from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-# Route pour la racine "/"
+# Définir une route pour la racine "/"
 @app.route("/", methods=["GET"])
 def home():
     return jsonify({"message": "Hello, World!"}), 200
 
 if __name__ == "__main__":
     import os
-    port = int(os.environ.get("PORT", 5000))
+    port = int(os.environ.get("PORT", 5000))  # Utilisation du port fourni par Railway
     app.run(host="0.0.0.0", port=port)
