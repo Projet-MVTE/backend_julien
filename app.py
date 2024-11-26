@@ -22,6 +22,9 @@ def set_three(input_string):
         f = open("arbre_decisions.txt","w")
         f.write(input_string)
         f.close()
+        f = open("arbre_decisions.txt","r")
+        chaine = f.read()
+        f.close()
         return jsonify({"result": input_string}), 200
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500
