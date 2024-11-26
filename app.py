@@ -42,6 +42,17 @@ app = Flask(__name__)
 @app.route("/", methods=["GET"])
 def home():
     return jsonify({"message": "Hello, World!"}), 200
+# Route pour télécharger un fichier JSON
+@app.route("/download-json", methods=["GET"])
+def download_json():
+    # Chemin vers votre fichier JSON local
+    json_file_path = "arbre.json"  # Assurez-vous que le fichier est dans le même répertoire ou spécifiez le chemin absolu
+
+    try:
+        # Envoyer le fichier JSON
+        return send_file(json_file_path, as_attachment=True, mimetype='application/json')
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
     import os
