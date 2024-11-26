@@ -1,3 +1,4 @@
+"""
 from flask import Flask, request, jsonify
 import os
 
@@ -29,5 +30,22 @@ def example_script(param1=None, param2=None):
     return {"param1": param1, "param2": param2}
 
 if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
+"""
+
+
+
+from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+# Route pour la racine "/"
+@app.route("/", methods=["GET"])
+def home():
+    return jsonify({"message": "Hello, World!"}), 200
+
+if __name__ == "__main__":
+    import os
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
