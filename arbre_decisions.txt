@@ -1,0 +1,5 @@
+0_;_depart
+00_;_symptome 1
+01_;_symptome 2
+010_;_symptome 3
+011_;_symptome 4
