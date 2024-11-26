@@ -3,6 +3,10 @@ import os
 
 app = Flask(__name__)
 
+@app.route("/", methods=["GET"])
+def home():
+    return jsonify({"message": "Hello, World!"}), 200
+
 @app.route('/run-script', methods=['POST'])
 def run_script():
     try:
