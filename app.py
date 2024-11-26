@@ -3,7 +3,7 @@ import os
 
 app = Flask(__name__)
 
-@app.route("/test", methods=["GET"])
+@app.route("/", methods=["GET"])
 def home():
     return jsonify({"message": "Hello, World!"}), 200
 
