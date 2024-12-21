@@ -16,6 +16,7 @@ def download_json():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+"""
 @app.route("/set_three/<string:input_string>", methods=["GET"])
 def set_three(input_string):
     try:
@@ -25,6 +26,20 @@ def set_three(input_string):
         return jsonify({"Fichier modifié": chaine}), 200
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500
+"""
+
+@app.route('/set_tree', methods=['POST'])
+def upload_file():
+    if 'file' not in request.files:
+        return "No file part", 400
+
+    file = request.files['file']
+
+    if file.filename == '':
+        return "No selected file", 400
+
+    file.save("arbre.json")  # Enregistre directement dans la racine
+    return "File uploaded successfully", 200
 
 if __name__ == "__main__":
     import os
