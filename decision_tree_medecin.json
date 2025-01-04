@@ -1,0 +1,1631 @@
+{
+    "message": "Built by Dina, Julien, Johan, Jawad and Naim at ENSTA Bretagne",
+    "source": "serveur",
+    "lastUpdated": null,
+    "data": {
+        "0": {
+            "id": "0",
+            "title": "Maladie Veineuse Thrombo Embolique (MVTE)",
+            "type": 0,
+            "next": [
+                "00",
+                "01",
+                "02",
+                "03",
+                "04"
+            ]
+        },
+        "00": {
+            "id": "00",
+            "title": "Embolie Pulmonaire ou Thrombose veineuse profonde proximale (EP ou TVPP)",
+            "type": 0,
+            "next": [
+                "000",
+                "001"
+            ]
+        },
+        "01": {
+            "id": "01",
+            "title": "Thrombose Veineuse Profonde Distale (TVD)",
+            "type": 0,
+            "next": [
+                "010",
+                "011"
+            ]
+        },
+        "02": {
+            "id": "02",
+            "title": "Thrombose veineuse Superficielle (TVS)",
+            "type": 0,
+            "next": [
+                "020",
+                "021",
+                "022",
+                "023"
+            ]
+        },
+        "03": {
+            "id": "03",
+            "title": "Thrombose Veineuse Membre sup\u00c3\u00a9rieur (TVMS)",
+            "type": 0,
+            "next": [
+                "030",
+                "031"
+            ]
+        },
+        "04": {
+            "id": "04",
+            "title": "Cas particuliers (Cas part.)",
+            "type": 0,
+            "next": [
+                "040"
+            ]
+        },
+        "000": {
+            "id": "000",
+            "title": "Facteur persistant (cancer / Maladie inflammatoire) ",
+            "type": 0,
+            "next": [
+                "0000",
+                "0001"
+            ]
+        },
+        "001": {
+            "id": "001",
+            "title": "Non provoqu\u00c3\u00a9 par facteur Majeur transitoire",
+            "type": 0,
+            "next": [
+                "0010",
+                "0011"
+            ]
+        },
+        "010": {
+            "id": "010",
+            "title": "Symptomatique",
+            "type": 0,
+            "next": [
+                "0100",
+                "0101",
+                "0102"
+            ]
+        },
+        "011": {
+            "id": "011",
+            "title": "Asymptomatique",
+            "type": 0,
+            "next": [
+                "0110"
+            ]
+        },
+        "020": {
+            "id": "020",
+            "title": "Membre inf\u00c3\u00a9rieur non provoqu\u00c3\u00a9e par facteur majeur",
+            "type": 0,
+            "next": [
+                "0200",
+                "0201"
+            ]
+        },
+        "021": {
+            "id": "021",
+            "title": "Grossesse",
+            "type": 0,
+            "next": [
+                "0210",
+                "0211"
+            ]
+        },
+        "022": {
+            "id": "022",
+            "title": "Cancer",
+            "type": 0,
+            "next": [
+                "0220",
+                "0221"
+            ]
+        },
+        "023": {
+            "id": "023",
+            "title": "Membre sup\u00c3\u00a9rieur",
+            "type": 0,
+            "next": [
+                "0230",
+                "0231"
+            ]
+        },
+        "030": {
+            "id": "030",
+            "title": "Sur Cath\u00c3\u00a9ter Centraux",
+            "type": 0,
+            "next": [
+                "0300",
+                "0301"
+            ]
+        },
+        "031": {
+            "id": "031",
+            "title": "Profonde (axilaire ou sous clavi\u00c3\u00a8re)",
+            "type": 0,
+            "next": [
+                "0310"
+            ]
+        },
+        "040": {
+            "id": "040",
+            "title": "R\u00c3\u00a9cidive Sous traitement bien conduit",
+            "type": 1,
+            "next": []
+        },
+        "0000": {
+            "id": "0000",
+            "title": "Cancer : Tant que actif ou sous traitement ",
+            "type": 0,
+            "next": [
+                "00000",
+                "00001",
+                "00002"
+            ]
+        },
+        "0001": {
+            "id": "0001",
+            "title": "Maladies inflammatoires",
+            "type": 0,
+            "next": [
+                "00010",
+                "00011"
+            ]
+        },
+        "0010": {
+            "id": "0010",
+            "title": "1ere MVTE",
+            "type": 0,
+            "next": [
+                "00100",
+                "00101",
+                "00102",
+                "00103",
+                "00104"
+            ]
+        },
+        "0011": {
+            "id": "0011",
+            "title": "Deuxi\u00c3\u00a8me MVTE non provoqu\u00c3\u00a9 (ou plus) ",
+            "type": 0,
+            "next": [
+                "00110"
+            ]
+        },
+        "0100": {
+            "id": "0100",
+            "title": "Facteur majeur transitoire",
+            "type": 0,
+            "next": [
+                "01000",
+                "01001"
+            ]
+        },
+        "0101": {
+            "id": "0101",
+            "title": "Facteur persistant",
+            "type": 0,
+            "next": [
+                "01010"
+            ]
+        },
+        "0102": {
+            "id": "0102",
+            "title": "Non provoqu\u00c3\u00a9 par facteur majeur transitoire",
+            "type": 0,
+            "next": [
+                "01020",
+                "01021"
+            ]
+        },
+        "0110": {
+            "id": "0110",
+            "title": "rien",
+            "type": 1,
+            "next": []
+        },
+        "0200": {
+            "id": "0200",
+            "title": "<3cm d'une crosse",
+            "type": 0,
+            "next": [
+                "02000"
+            ]
+        },
+        "0201": {
+            "id": "0201",
+            "title": ">3cm d'une crosse",
+            "type": 0,
+            "next": [
+                "02010",
+                "02011"
+            ]
+        },
+        "0210": {
+            "id": "0210",
+            "title": "<3cm d'une crosse",
+            "type": 0,
+            "next": [
+                "02100"
+            ]
+        },
+        "0211": {
+            "id": "0211",
+            "title": ">3cm d'une crosse",
+            "type": 0,
+            "next": [
+                "02110",
+                "02111"
+            ]
+        },
+        "0220": {
+            "id": "0220",
+            "title": "<3cm d'une crosse",
+            "type": 0,
+            "next": [
+                "02200"
+            ]
+        },
+        "0221": {
+            "id": "0221",
+            "title": ">3cm d'une crosse",
+            "type": 0,
+            "next": [
+                "02210",
+                "02211"
+            ]
+        },
+        "0230": {
+            "id": "0230",
+            "title": "Post catheter / limit\u00c3\u00a9e",
+            "type": 0,
+            "next": [
+                "02300"
+            ]
+        },
+        "0231": {
+            "id": "0231",
+            "title": "Symptomatique",
+            "type": 1,
+            "next": []
+        },
+        "0300": {
+            "id": "0300",
+            "title": "Fonctionnel, en place et non-infect\u00c3\u00a9",
+            "type": 0,
+            "next": [
+                "03000"
+            ]
+        },
+        "0301": {
+            "id": "0301",
+            "title": "Non fonctionnel, infect\u00c3\u00a9, mal positionn\u00c3\u00a9",
+            "type": 0,
+            "next": [
+                "03010"
+            ]
+        },
+        "0310": {
+            "id": "0310",
+            "title": "Symptomatique : anticoagulation curative 3 mois (memes modalit\u00c3\u00a9s TVP MI) ",
+            "type": 1,
+            "next": []
+        },
+        "00000": {
+            "id": "00000",
+            "title": "1er choix HBPM ou Apixaban doses curatives",
+            "type": 0,
+            "next": [
+                "000000"
+            ]
+        },
+        "00001": {
+            "id": "00001",
+            "title": "2me choix si cancer gastro-intestinal haut non op\u00c3\u00a9r\u00c3\u00a9 ou urog\u00c3\u00a9nital non op\u00c3\u00a9r\u00c3\u00a9 : Rivaroxaban",
+            "type": 0,
+            "next": [
+                "000010"
+            ]
+        },
+        "00002": {
+            "id": "00002",
+            "title": "3eme choix : Avk",
+            "type": 0,
+            "next": [
+                "000020"
+            ]
+        },
+        "00010": {
+            "id": "00010",
+            "title": "Active",
+            "type": 0,
+            "next": [
+                "000100"
+            ]
+        },
+        "00011": {
+            "id": "00011",
+            "title": "en r\u00c3\u00a9mission compl\u00c3\u00a8te",
+            "type": 0,
+            "next": [
+                "000110"
+            ]
+        },
+        "00100": {
+            "id": "00100",
+            "title": "Provoqu\u00c3\u00a9e par facteur majeur transitoire ###Aide## (Facteur Maj Trans)",
+            "type": 0,
+            "next": [
+                "001000",
+                "001001"
+            ]
+        },
+        "00101": {
+            "id": "00101",
+            "title": "SAPL",
+            "type": 0,
+            "next": [
+                "001010"
+            ]
+        },
+        "00102": {
+            "id": "00102",
+            "title": "Antithrombine",
+            "type": 0,
+            "next": [
+                "001020"
+            ]
+        },
+        "00103": {
+            "id": "00103",
+            "title": "1ere EP non provoqu\u00c3\u00a9e haut risque",
+            "type": 0,
+            "next": [
+                "001030",
+                "001031"
+            ]
+        },
+        "00104": {
+            "id": "00104",
+            "title": "Autre",
+            "type": 0,
+            "next": [
+                "001040",
+                "001041"
+            ]
+        },
+        "00110": {
+            "id": "00110",
+            "title": "AOD dose pleine ou AVK INR 2-3 =>  Non limit\u00c3\u00a9",
+            "type": 1,
+            "next": []
+        },
+        "01000": {
+            "id": "01000",
+            "title": "h\u00c3\u00a9morragie active ",
+            "type": 0,
+            "next": [
+                "010000"
+            ]
+        },
+        "01001": {
+            "id": "01001",
+            "title": "Pas d'hemorragie active mais risque h\u00c3\u00a9morragique \u00c3\u00a9lev\u00c3\u00a9 ",
+            "type": 0,
+            "next": [
+                "010010"
+            ]
+        },
+        "01010": {
+            "id": "01010",
+            "title": "Cancer : Tant que actif ou sous traitement : Analogie TVP ",
+            "type": 0,
+            "next": [
+                "010100",
+                "010101",
+                "010102"
+            ]
+        },
+        "01020": {
+            "id": "01020",
+            "title": "Unisegmentaire",
+            "type": 0,
+            "next": [
+                "010200",
+                "010201",
+                "010202"
+            ]
+        },
+        "01021": {
+            "id": "01021",
+            "title": "Multisegmentaire ou bilat\u00c3\u00a9ral",
+            "type": 0,
+            "next": [
+                "010210",
+                "010211"
+            ]
+        },
+        "02000": {
+            "id": "02000",
+            "title": "Anticoagulation curative 3 mois",
+            "type": 1,
+            "next": []
+        },
+        "02010": {
+            "id": "02010",
+            "title": ">5cm : Fondaparinux \"dose pr\u00c3\u00a9ventive\"  2,5 mg/SC/J pendant 30-45 jours",
+            "type": 1,
+            "next": []
+        },
+        "02011": {
+            "id": "02011",
+            "title": "<5cm",
+            "type": 0,
+            "next": [
+                "020110",
+                "020111"
+            ]
+        },
+        "02100": {
+            "id": "02100",
+            "title": "Anticoagulation curative 3 mois minimum plus 6 semaines post partum",
+            "type": 1,
+            "next": []
+        },
+        "02110": {
+            "id": "02110",
+            "title": ">5cm : HBPM dose pr\u00c3\u00a9ventive pendant 30-45 jours",
+            "type": 1,
+            "next": []
+        },
+        "02111": {
+            "id": "02111",
+            "title": "<5cm",
+            "type": 0,
+            "next": [
+                "021110",
+                "021111"
+            ]
+        },
+        "02200": {
+            "id": "02200",
+            "title": "Anticoagulation curative 3 mois",
+            "type": 1,
+            "next": []
+        },
+        "02210": {
+            "id": "02210",
+            "title": ">5cm : Fondaparinux \"dose pr\u00c3\u00a9ventive\"  2,5 mg/SC/J pendant 30-45 jours",
+            "type": 0,
+            "next": [
+                "022100"
+            ]
+        },
+        "02211": {
+            "id": "02211",
+            "title": "<5cm",
+            "type": 0,
+            "next": [
+                "022110",
+                "022111"
+            ]
+        },
+        "02300": {
+            "id": "02300",
+            "title": "Retrait cath\u00c3\u00a9ter / AINS local",
+            "type": 1,
+            "next": []
+        },
+        "03000": {
+            "id": "03000",
+            "title": "Anticoagulation curative 3 mois",
+            "type": 1,
+            "next": []
+        },
+        "03010": {
+            "id": "03010",
+            "title": "Retrait catheter",
+            "type": 1,
+            "next": []
+        },
+        "000000": {
+            "id": "000000",
+            "title": ">6mois et tant que maladie est active ou n\u00c3\u00a9cessite un traitement sp\u00c3\u00a9cifique",
+            "type": 1,
+            "next": []
+        },
+        "000010": {
+            "id": "000010",
+            "title": ">6mois et tant que maladie est active ou n\u00c3\u00a9cessite un traitement sp\u00c3\u00a9cifique",
+            "type": 1,
+            "next": []
+        },
+        "000020": {
+            "id": "000020",
+            "title": ">6mois et tant que maladie est active ou n\u00c3\u00a9cessite un traitement sp\u00c3\u00a9cifique",
+            "type": 1,
+            "next": []
+        },
+        "000100": {
+            "id": "000100",
+            "title": "AOD 1ere int",
+            "type": 0,
+            "next": [
+                "0001000"
+            ]
+        },
+        "000110": {
+            "id": "000110",
+            "title": "AOD 6mois 1ere int",
+            "type": 1,
+            "next": []
+        },
+        "001000": {
+            "id": "001000",
+            "title": "Homme",
+            "type": 0,
+            "next": [
+                "0010000",
+                "0010001"
+            ]
+        },
+        "001001": {
+            "id": "001001",
+            "title": "Femme",
+            "type": 0,
+            "next": [
+                "0010010",
+                "0010011",
+                "0010012"
+            ]
+        },
+        "001010": {
+            "id": "001010",
+            "title": "AVK INR 2-3, Dur\u00c3\u00a9e Non limit\u00c3\u00a9",
+            "type": 1,
+            "next": []
+        },
+        "001020": {
+            "id": "001020",
+            "title": "AOD dose pleine ou AVK INR 2-3,  Non limit\u00c3\u00a9",
+            "type": 1,
+            "next": []
+        },
+        "001030": {
+            "id": "001030",
+            "title": "AOD dose pleine, Non limit\u00c3\u00a9 ",
+            "type": 1,
+            "next": []
+        },
+        "001031": {
+            "id": "001031",
+            "title": "AVK INR 2-3, Non limit\u00c3\u00a9",
+            "type": 1,
+            "next": []
+        },
+        "001040": {
+            "id": "001040",
+            "title": "Homme",
+            "type": 0,
+            "next": [
+                "0010400",
+                "0010401"
+            ]
+        },
+        "001041": {
+            "id": "001041",
+            "title": "Femme",
+            "type": 0,
+            "next": [
+                "0010410",
+                "0010411"
+            ]
+        },
+        "010000": {
+            "id": "010000",
+            "title": "Surveillance clinique  et Controle Echo doppler \u00c3\u00a0 J7 pas de filtre cave ",
+            "type": 0,
+            "next": [
+                "0100000",
+                "0100001"
+            ]
+        },
+        "010010": {
+            "id": "010010",
+            "title": "Anticoagulation pr\u00c3\u00a9ventive 6s",
+            "type": 0,
+            "next": [
+                "0100100",
+                "0100101"
+            ]
+        },
+        "010100": {
+            "id": "010100",
+            "title": "1er choix HBPM ou Apixaban doses curatives",
+            "type": 0,
+            "next": [
+                "0101000"
+            ]
+        },
+        "010101": {
+            "id": "010101",
+            "title": "2me choix SAUF si cancer gastro-intestinal haut non op\u00c3\u00a9r\u00c3\u00a9 ou urog\u00c3\u00a9nital non op\u00c3\u00a9r\u00c3\u00a9 : Rivaroxaban",
+            "type": 0,
+            "next": [
+                "0101010"
+            ]
+        },
+        "010102": {
+            "id": "010102",
+            "title": "3eme choix : Avk",
+            "type": 0,
+            "next": [
+                "0101020"
+            ]
+        },
+        "010200": {
+            "id": "010200",
+            "title": "1er Episode non provoqu\u00c3\u00a9",
+            "type": 0,
+            "next": [
+                "0102000",
+                "0102001"
+            ]
+        },
+        "010201": {
+            "id": "010201",
+            "title": "2eme \u00c3\u00a9pisode non provoqu\u00c3\u00a9e",
+            "type": 0,
+            "next": [
+                "0102010",
+                "0102011"
+            ]
+        },
+        "010202": {
+            "id": "010202",
+            "title": ">3eme Episode non provoqu\u00c3\u00a9",
+            "type": 0,
+            "next": [
+                "0102020"
+            ]
+        },
+        "010210": {
+            "id": "010210",
+            "title": "",
+            "type": 0,
+            "next": [
+                "0102100"
+            ]
+        },
+        "010211": {
+            "id": "010211",
+            "title": "Pas de risque h\u00c3\u00a9morragique \u00c3\u00a9lev\u00c3\u00a9",
+            "type": 0,
+            "next": [
+                "0102110"
+            ]
+        },
+        "020110": {
+            "id": "020110",
+            "title": "Unique : AINS local",
+            "type": 1,
+            "next": []
+        },
+        "020111": {
+            "id": "020111",
+            "title": "Pluri segmentaire : Fondaparinux dose pr\u00c3\u00a9ventive 2,5 mg/SC/J pendant 30-45 jours ",
+            "type": 1,
+            "next": []
+        },
+        "021110": {
+            "id": "021110",
+            "title": "Unique courte : surveillance \u00c3\u00a9chographique \u00c3\u00a0 J10",
+            "type": 1,
+            "next": []
+        },
+        "021111": {
+            "id": "021111",
+            "title": "bilat\u00c3\u00a9rales  ou tres symptomatiques : HBPM dose pr\u00c3\u00a9ventive pendant grossesse + 6 sem post partum ",
+            "type": 1,
+            "next": []
+        },
+        "022100": {
+            "id": "022100",
+            "title": "Si extension constat\u00c3\u00a9e par Echo doppler Anticoagulation curative pendant 3 mois",
+            "type": 1,
+            "next": []
+        },
+        "022110": {
+            "id": "022110",
+            "title": "Unique : AINS local",
+            "type": 1,
+            "next": []
+        },
+        "022111": {
+            "id": "022111",
+            "title": "Pluri segmentaire : Fondaparinux dose pr\u00c3\u00a9ventive 2,5 mg/SC/J pendant 30-45 jours ",
+            "type": 0,
+            "next": [
+                "0221110"
+            ]
+        },
+        "0001000": {
+            "id": "0001000",
+            "title": ">6mois et tant que maladie est active ou n\u00c3\u00a9cessite un traitement sp\u00c3\u00a9cifique",
+            "type": 1,
+            "next": []
+        },
+        "0010000": {
+            "id": "0010000",
+            "title": "Embolie Pulmonaire (EP)",
+            "type": 0,
+            "next": [
+                "00100000",
+                "00100001"
+            ]
+        },
+        "0010001": {
+            "id": "0010001",
+            "title": "TVP proximale",
+            "type": 0,
+            "next": [
+                "00100010",
+                "00100011"
+            ]
+        },
+        "0010010": {
+            "id": "0010010",
+            "title": "Femme non enceinte",
+            "type": 0,
+            "next": [
+                "00100100",
+                "00100101"
+            ]
+        },
+        "0010011": {
+            "id": "0010011",
+            "title": "Grossesse",
+            "type": 0,
+            "next": [
+                "00100110",
+                "00100111"
+            ]
+        },
+        "0010012": {
+            "id": "0010012",
+            "title": "Post partum",
+            "type": 0,
+            "next": [
+                "00100120",
+                "00100121"
+            ]
+        },
+        "0010400": {
+            "id": "0010400",
+            "title": "EP non \u00c3\u00a0 Haut risque",
+            "type": 0,
+            "next": [
+                "00104000",
+                "00104001"
+            ]
+        },
+        "0010401": {
+            "id": "0010401",
+            "title": "TVP",
+            "type": 0,
+            "next": [
+                "00104010",
+                "00104011"
+            ]
+        },
+        "0010410": {
+            "id": "0010410",
+            "title": "moins de 50 ans",
+            "type": 0,
+            "next": [
+                "00104100",
+                "00104101"
+            ]
+        },
+        "0010411": {
+            "id": "0010411",
+            "title": ">50ans",
+            "type": 0,
+            "next": [
+                "00104110",
+                "00104111"
+            ]
+        },
+        "0100000": {
+            "id": "0100000",
+            "title": "Pas d'extension => pas de traitement",
+            "type": 1,
+            "next": []
+        },
+        "0100001": {
+            "id": "0100001",
+            "title": "Extension proximale ",
+            "type": 0,
+            "next": [
+                "01000010",
+                "01000011"
+            ]
+        },
+        "0100100": {
+            "id": "0100100",
+            "title": "Pas d'extension => pas de ttt",
+            "type": 1,
+            "next": []
+        },
+        "0100101": {
+            "id": "0100101",
+            "title": "Extension proximale ",
+            "type": 0,
+            "next": [
+                "01001010"
+            ]
+        },
+        "0101000": {
+            "id": "0101000",
+            "title": ">6mois et tant que maladie est active ou n\u00c3\u00a9cessite un traitement sp\u00c3\u00a9cifique",
+            "type": 1,
+            "next": []
+        },
+        "0101010": {
+            "id": "0101010",
+            "title": ">6mois et tant que maladie est active ou n\u00c3\u00a9cessite un ttt sp\u00c3\u00a9cifique",
+            "type": 1,
+            "next": []
+        },
+        "0101020": {
+            "id": "0101020",
+            "title": ">6mois et tant que maladie est active ou n\u00c3\u00a9cessite un ttt sp\u00c3\u00a9cifique",
+            "type": 1,
+            "next": []
+        },
+        "0102000": {
+            "id": "0102000",
+            "title": "",
+            "type": 0,
+            "next": [
+                "01020000"
+            ]
+        },
+        "0102001": {
+            "id": "0102001",
+            "title": "Pas de risque h\u00c3\u00a9morragique \u00c3\u00a9lev\u00c3\u00a9",
+            "type": 0,
+            "next": [
+                "01020010"
+            ]
+        },
+        "0102010": {
+            "id": "0102010",
+            "title": "",
+            "type": 0,
+            "next": [
+                "01020100"
+            ]
+        },
+        "0102011": {
+            "id": "0102011",
+            "title": "Pas de risque h\u00c3\u00a9morragique \u00c3\u00a9lev\u00c3\u00a9",
+            "type": 0,
+            "next": [
+                "01020110"
+            ]
+        },
+        "0102020": {
+            "id": "0102020",
+            "title": "Zone d'incertitude : discuter anticoagulation illimit\u00c3\u00a9 en fonction risque h\u00c3\u00a9morragique et volont\u00c3\u00a9 patient",
+            "type": 1,
+            "next": []
+        },
+        "0102100": {
+            "id": "0102100",
+            "title": "Surveillance lcinique  et Controle Echo doppler \u00c3\u00a0 J7",
+            "type": 0,
+            "next": [
+                "01021000",
+                "01021001"
+            ]
+        },
+        "0102110": {
+            "id": "0102110",
+            "title": "AVK ou AOD pleine dose 3 mois",
+            "type": 1,
+            "next": []
+        },
+        "0221110": {
+            "id": "0221110",
+            "title": "Si extension constat\u00c3\u00a9e par Echo doppler Anticoagulation curative pendant 3 mois",
+            "type": 1,
+            "next": []
+        },
+        "00100000": {
+            "id": "00100000",
+            "title": "Haut risque (Risque)",
+            "type": 0,
+            "next": [
+                "001000000"
+            ]
+        },
+        "00100001": {
+            "id": "00100001",
+            "title": "Non \u00c3\u00a0 haut risque ",
+            "type": 0,
+            "next": [
+                "001000010"
+            ]
+        },
+        "00100010": {
+            "id": "00100010",
+            "title": "Ilio-cave",
+            "type": 0,
+            "next": [
+                "001000100"
+            ]
+        },
+        "00100011": {
+            "id": "00100011",
+            "title": "F\u00c3\u00a9morale ou plus distale",
+            "type": 0,
+            "next": [
+                "001000110"
+            ]
+        },
+        "00100100": {
+            "id": "00100100",
+            "title": "Embolie pulmonaire",
+            "type": 0,
+            "next": [
+                "001001000",
+                "001001001"
+            ]
+        },
+        "00100101": {
+            "id": "00100101",
+            "title": "TVP proximale",
+            "type": 0,
+            "next": [
+                "001001010",
+                "001001011"
+            ]
+        },
+        "00100110": {
+            "id": "00100110",
+            "title": "avant 9eme mois ###prise en charge accouchement##",
+            "type": 0,
+            "next": [
+                "001001100",
+                "001001101"
+            ]
+        },
+        "00100111": {
+            "id": "00100111",
+            "title": "9eme mois ## prise en charge accouchement##",
+            "type": 1,
+            "next": []
+        },
+        "00100120": {
+            "id": "00100120",
+            "title": "Allaitement",
+            "type": 0,
+            "next": [
+                "001001200",
+                "001001201"
+            ]
+        },
+        "00100121": {
+            "id": "00100121",
+            "title": "Pas d'allaitement",
+            "type": 0,
+            "next": [
+                "001001210",
+                "001001211"
+            ]
+        },
+        "00104000": {
+            "id": "00104000",
+            "title": "Pas de facteur mineur transitoire",
+            "type": 0,
+            "next": [
+                "001040000",
+                "001040001"
+            ]
+        },
+        "00104001": {
+            "id": "00104001",
+            "title": "Facteur mineur transitoire",
+            "type": 0,
+            "next": [
+                "001040010"
+            ]
+        },
+        "00104010": {
+            "id": "00104010",
+            "title": "Pas de facteur mineur transitoire",
+            "type": 0,
+            "next": [
+                "001040100"
+            ]
+        },
+        "00104011": {
+            "id": "00104011",
+            "title": "Facteur mineur transitoire",
+            "type": 0,
+            "next": [
+                "001040110"
+            ]
+        },
+        "00104100": {
+            "id": "00104100",
+            "title": "HERDOO2 <=1",
+            "type": 0,
+            "next": [
+                "001041000"
+            ]
+        },
+        "00104101": {
+            "id": "00104101",
+            "title": "HERDOO2 >=2",
+            "type": 0,
+            "next": [
+                "001041010",
+                "001041011"
+            ]
+        },
+        "00104110": {
+            "id": "00104110",
+            "title": "EP non \u00c3\u00a0 haut risque",
+            "type": 0,
+            "next": [
+                "001041100"
+            ]
+        },
+        "00104111": {
+            "id": "00104111",
+            "title": "TVP",
+            "type": 0,
+            "next": [
+                "001041110",
+                "001041111"
+            ]
+        },
+        "01000010": {
+            "id": "01000010",
+            "title": "Compression",
+            "type": 1,
+            "next": []
+        },
+        "01000011": {
+            "id": "01000011",
+            "title": "Anticoagulation curative 3 mois",
+            "type": 1,
+            "next": []
+        },
+        "01001010": {
+            "id": "01001010",
+            "title": "Anticoagulation curative 3 mois",
+            "type": 1,
+            "next": []
+        },
+        "01020000": {
+            "id": "01020000",
+            "title": "Surveillance lcinique  et Controle Echo doppler \u00c3\u00a0 J7",
+            "type": 0,
+            "next": [
+                "010200000",
+                "010200001"
+            ]
+        },
+        "01020010": {
+            "id": "01020010",
+            "title": "AVK ou AOD pleine dose 6 semaines \u00c3\u00a0 3 mois",
+            "type": 1,
+            "next": []
+        },
+        "01020100": {
+            "id": "01020100",
+            "title": "Surveillance lcinique  et Controle Echo doppler \u00c3\u00a0 J7",
+            "type": 0,
+            "next": [
+                "010201000",
+                "010201001"
+            ]
+        },
+        "01020110": {
+            "id": "01020110",
+            "title": "AVK ou AOD pleine dose 6 semaines \u00c3\u00a0 3 mois",
+            "type": 1,
+            "next": []
+        },
+        "01021000": {
+            "id": "01021000",
+            "title": "Pas d'extension => pas de ttt",
+            "type": 1,
+            "next": []
+        },
+        "01021001": {
+            "id": "01021001",
+            "title": "Extension proximale ",
+            "type": 0,
+            "next": [
+                "010210010"
+            ]
+        },
+        "001000000": {
+            "id": "001000000",
+            "title": "6 mois AOD ou AVK",
+            "type": 1,
+            "next": []
+        },
+        "001000010": {
+            "id": "001000010",
+            "title": "3 mois AOD ou AVK",
+            "type": 1,
+            "next": []
+        },
+        "001000100": {
+            "id": "001000100",
+            "title": "6 mois AOD",
+            "type": 1,
+            "next": []
+        },
+        "001000110": {
+            "id": "001000110",
+            "title": "3 mois AOD ou AVK",
+            "type": 1,
+            "next": []
+        },
+        "001001000": {
+            "id": "001001000",
+            "title": "haut risque ",
+            "type": 0,
+            "next": [
+                "0010010000"
+            ]
+        },
+        "001001001": {
+            "id": "001001001",
+            "title": "Non \u00c3\u00a0 haut risque ",
+            "type": 0,
+            "next": [
+                "0010010010"
+            ]
+        },
+        "001001010": {
+            "id": "001001010",
+            "title": "Ilio-cave",
+            "type": 0,
+            "next": [
+                "0010010100"
+            ]
+        },
+        "001001011": {
+            "id": "001001011",
+            "title": "F\u00c3\u00a9morale ou plus distale",
+            "type": 0,
+            "next": [
+                "0010010110"
+            ]
+        },
+        "001001100": {
+            "id": "001001100",
+            "title": "Embolie pulmonaire",
+            "type": 0,
+            "next": [
+                "0010011000",
+                "0010011001"
+            ]
+        },
+        "001001101": {
+            "id": "001001101",
+            "title": "TVP proximale",
+            "type": 0,
+            "next": [
+                "0010011010",
+                "0010011011"
+            ]
+        },
+        "001001200": {
+            "id": "001001200",
+            "title": "Embolie Pulmonaire",
+            "type": 0,
+            "next": [
+                "0010012000",
+                "0010012001"
+            ]
+        },
+        "001001201": {
+            "id": "001001201",
+            "title": "TVP proximale",
+            "type": 0,
+            "next": [
+                "0010012010",
+                "0010012011"
+            ]
+        },
+        "001001210": {
+            "id": "001001210",
+            "title": "Embolie pulmonaire",
+            "type": 0,
+            "next": [
+                "0010012100",
+                "0010012101"
+            ]
+        },
+        "001001211": {
+            "id": "001001211",
+            "title": "TVP proximale",
+            "type": 0,
+            "next": [
+                "0010012110",
+                "0010012111"
+            ]
+        },
+        "001040000": {
+            "id": "001040000",
+            "title": "AOD dose pleine  6 mois  puis  non traitememnt illimit\u00c3\u00a9 au choix: demie dose AOD ou dose pleine AOD ",
+            "type": 1,
+            "next": []
+        },
+        "001040001": {
+            "id": "001040001",
+            "title": "AVK INR 2-3 =>  Non limit\u00c3\u00a9",
+            "type": 1,
+            "next": []
+        },
+        "001040010": {
+            "id": "001040010",
+            "title": "Zone d'incertitude : contacter centre expert [options : 1) AOD dose pleine  ou AVK 6 mois 2) ou illimit\u00c3\u00a9 ]",
+            "type": 1,
+            "next": []
+        },
+        "001040100": {
+            "id": "001040100",
+            "title": "Zone d'incertitude : contacter centre expert 1) AOD dose pleine  ou AVK 6 mois 2) ou illimit\u00c3\u00a9  ",
+            "type": 1,
+            "next": []
+        },
+        "001040110": {
+            "id": "001040110",
+            "title": "AOD dose pleine ou AVK 6 mois",
+            "type": 1,
+            "next": []
+        },
+        "001041000": {
+            "id": "001041000",
+            "title": "TVP ou EP non \u00c3\u00a0 haut risque",
+            "type": 0,
+            "next": [
+                "0010410000"
+            ]
+        },
+        "001041010": {
+            "id": "001041010",
+            "title": "EP non \u00c3\u00a0 haut risque",
+            "type": 0,
+            "next": [
+                "0010410100"
+            ]
+        },
+        "001041011": {
+            "id": "001041011",
+            "title": "TVP",
+            "type": 0,
+            "next": [
+                "0010410110"
+            ]
+        },
+        "001041100": {
+            "id": "001041100",
+            "title": "AOD dose pleine  6 mois  puis  non traitememnt illimit\u00c3\u00a9 au choix: demie dose AOD ou dose pleine AOD ",
+            "type": 1,
+            "next": []
+        },
+        "001041110": {
+            "id": "001041110",
+            "title": "Facteur mineur transitoire",
+            "type": 0,
+            "next": [
+                "0010411100"
+            ]
+        },
+        "001041111": {
+            "id": "001041111",
+            "title": "Pas de facteur mineur transitoire",
+            "type": 0,
+            "next": [
+                "0010411110"
+            ]
+        },
+        "010200000": {
+            "id": "010200000",
+            "title": "Pas d'extension => pas de ttt",
+            "type": 1,
+            "next": []
+        },
+        "010200001": {
+            "id": "010200001",
+            "title": "Extension proximale ",
+            "type": 0,
+            "next": [
+                "0102000010"
+            ]
+        },
+        "010201000": {
+            "id": "010201000",
+            "title": "Pas d'extension => pas de ttt",
+            "type": 1,
+            "next": []
+        },
+        "010201001": {
+            "id": "010201001",
+            "title": "Extension proximale ",
+            "type": 0,
+            "next": [
+                "0102010010"
+            ]
+        },
+        "010210010": {
+            "id": "010210010",
+            "title": "Anticoagulation curative 3 mois",
+            "type": 1,
+            "next": []
+        },
+        "0010010000": {
+            "id": "0010010000",
+            "title": "6 mois AOD ou AVK",
+            "type": 1,
+            "next": []
+        },
+        "0010010010": {
+            "id": "0010010010",
+            "title": "3 mois AOD ou AVK",
+            "type": 1,
+            "next": []
+        },
+        "0010010100": {
+            "id": "0010010100",
+            "title": "6 mois AOD ou AVK",
+            "type": 1,
+            "next": []
+        },
+        "0010010110": {
+            "id": "0010010110",
+            "title": "3 mois AOD ou AVK",
+            "type": 1,
+            "next": []
+        },
+        "0010011000": {
+            "id": "0010011000",
+            "title": "haut risque ",
+            "type": 0,
+            "next": [
+                "00100110000"
+            ]
+        },
+        "0010011001": {
+            "id": "0010011001",
+            "title": "Non \u00c3\u00a0 haut risque ",
+            "type": 0,
+            "next": [
+                "00100110010"
+            ]
+        },
+        "0010011010": {
+            "id": "0010011010",
+            "title": "Ilio-cave",
+            "type": 0,
+            "next": [
+                "00100110100"
+            ]
+        },
+        "0010011011": {
+            "id": "0010011011",
+            "title": "F\u00c3\u00a9morale ou plus distale",
+            "type": 0,
+            "next": [
+                "00100110110"
+            ]
+        },
+        "0010012000": {
+            "id": "0010012000",
+            "title": "haut risque ",
+            "type": 0,
+            "next": [
+                "00100120000"
+            ]
+        },
+        "0010012001": {
+            "id": "0010012001",
+            "title": "Non a haut risque ",
+            "type": 0,
+            "next": [
+                "00100120010"
+            ]
+        },
+        "0010012010": {
+            "id": "0010012010",
+            "title": "Ilio-cave",
+            "type": 0,
+            "next": [
+                "00100120100"
+            ]
+        },
+        "0010012011": {
+            "id": "0010012011",
+            "title": "F\u00c3\u00a9morale ou plus dist",
+            "type": 0,
+            "next": [
+                "00100120110"
+            ]
+        },
+        "0010012100": {
+            "id": "0010012100",
+            "title": "Haut risque ",
+            "type": 0,
+            "next": [
+                "00100121000"
+            ]
+        },
+        "0010012101": {
+            "id": "0010012101",
+            "title": "Non a haut risque ",
+            "type": 0,
+            "next": [
+                "00100121010"
+            ]
+        },
+        "0010012110": {
+            "id": "0010012110",
+            "title": "Ilio-cave",
+            "type": 0,
+            "next": [
+                "00100121100"
+            ]
+        },
+        "0010012111": {
+            "id": "0010012111",
+            "title": "F\u00c3\u00a9morale ou plus dist",
+            "type": 0,
+            "next": [
+                "00100121110"
+            ]
+        },
+        "0010410000": {
+            "id": "0010410000",
+            "title": "AOD 6mois 1ere int",
+            "type": 1,
+            "next": []
+        },
+        "0010410100": {
+            "id": "0010410100",
+            "title": "AOD dose pleine  6 mois  puis traitememnt illimit\u00c3\u00a9 au choix: demie dose AOD ou dose pleine AOD ",
+            "type": 1,
+            "next": []
+        },
+        "0010410110": {
+            "id": "0010410110",
+            "title": "Zone d'incertitude : contacter centre expert 1) AOD dose pleine  ou AVK 6 mois 2) a discuter illimit\u00c3\u00a9  ",
+            "type": 1,
+            "next": []
+        },
+        "0010411100": {
+            "id": "0010411100",
+            "title": "AOD dose pleine ou AVK 6mois 1ere int",
+            "type": 1,
+            "next": []
+        },
+        "0010411110": {
+            "id": "0010411110",
+            "title": "Zone d'incertitude : contacter centre expert 1) AOD dose pleine  ou AVK 6 mois 2) a discuter illimit\u00c3\u00a9  ",
+            "type": 1,
+            "next": []
+        },
+        "0102000010": {
+            "id": "0102000010",
+            "title": "Anticoagulation curative 3 mois",
+            "type": 1,
+            "next": []
+        },
+        "0102010010": {
+            "id": "0102010010",
+            "title": "Anticoagulation curative 3 mois",
+            "type": 1,
+            "next": []
+        },
+        "00100110000": {
+            "id": "00100110000",
+            "title": "HBPM 6 mois minimum et tant que grossesse en cours  plus 6 semaines post partum",
+            "type": 1,
+            "next": []
+        },
+        "00100110010": {
+            "id": "00100110010",
+            "title": "HBPM 3 mois minimum et tant que grossesse en cours plus 6 semaines post partum",
+            "type": 0,
+            "next": [
+                "001001100100"
+            ]
+        },
+        "00100110100": {
+            "id": "00100110100",
+            "title": "HBPM 6 mois minimum et tant que grossesse en cours  plus 6 semaines post partum",
+            "type": 1,
+            "next": []
+        },
+        "00100110110": {
+            "id": "00100110110",
+            "title": "HBPM 3 mois et tant que grossesse en cours plus 6 semaines post partum",
+            "type": 0,
+            "next": [
+                "001001101100"
+            ]
+        },
+        "00100120000": {
+            "id": "00100120000",
+            "title": "6 mois HBPM",
+            "type": 1,
+            "next": []
+        },
+        "00100120010": {
+            "id": "00100120010",
+            "title": "3 mois HBPM",
+            "type": 1,
+            "next": []
+        },
+        "00100120100": {
+            "id": "00100120100",
+            "title": "6 mois HBPM",
+            "type": 1,
+            "next": []
+        },
+        "00100120110": {
+            "id": "00100120110",
+            "title": "3 mois HBPM ",
+            "type": 1,
+            "next": []
+        },
+        "00100121000": {
+            "id": "00100121000",
+            "title": "6 mois HBPM, AOD ou AVK ",
+            "type": 1,
+            "next": []
+        },
+        "00100121010": {
+            "id": "00100121010",
+            "title": "3 mois HBPM, AOD ou AVK ",
+            "type": 1,
+            "next": []
+        },
+        "00100121100": {
+            "id": "00100121100",
+            "title": "6 mois HBPM AOD ou AVK ",
+            "type": 1,
+            "next": []
+        },
+        "00100121110": {
+            "id": "00100121110",
+            "title": "3 mois HBPM AOD ou AVK ",
+            "type": 1,
+            "next": []
+        },
+        "001001100100": {
+            "id": "001001100100",
+            "title": "dernier mois de grossesse : HBPM en 2xpar jour +derni\u00c3\u00a8re injection 12h avant d\u00c3\u00a9clenchement ",
+            "type": 1,
+            "next": []
+        },
+        "001001101100": {
+            "id": "001001101100",
+            "title": "dernier mois de grossesse : HBPM en 2xpar jour +derni\u00c3\u00a8re injection 12h avant d\u00c3\u00a9clenchement ",
+            "type": 1,
+            "next": []
+        }
+    }
+}
