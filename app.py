@@ -29,7 +29,7 @@ def upload_file():
     file.save("arbre.json")  # Enregistre directement dans la racine
     return "File uploaded successfully", 200
 
-@app.route('/calculate', methods=['GET'])
+@app.route('/askIA', methods=['GET'])
 def calculate():
     # Récupération des paramètres de la requête
     a = request.args.get('a', type=float)
@@ -39,23 +39,8 @@ def calculate():
     # Vérification des paramètres
     if a is None or b is None or operation is None:
         return jsonify({"error": "Missing parameters. Please provide 'a', 'b', and 'operation'."}), 400
-
-    # Calcul en fonction de l'opération
-    if operation == "add":
-        result = a + b
-    elif operation == "subtract":
-        result = a - b
-    elif operation == "multiply":
-        result = a * b
-    elif operation == "divide":
-        if b == 0:
-            return jsonify({"error": "Division by zero is not allowed."}), 400
-        result = a / b
-    else:
-        return jsonify({"error": f"Unsupported operation: {operation}"}), 400
-
     # Retourner le résultat
-    return jsonify({"result": result}), 200
+    return jsonify({"result": "test"}), 200
 
 if __name__ == "__main__":
     import os
