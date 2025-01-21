@@ -5,7 +5,7 @@ app = Flask(__name__)
 # Définir une route pour la racine "/"
 @app.route("/", methods=["GET"])
 def home():
-    return jsonify({"message": "IA-MVTE Application, developped at ENSTA Bretagne in 2024 buy Dina, Johan, Julien, Jawad and Naim"}), 200
+    return jsonify({"message": "IA-MVTE Application, developped at ENSTA Bretagne in 2024 by Dina, Johan, Julien, Jawad and Naim"}), 200
     
 # Route pour télécharger un fichier JSON
 @app.route("/download_tree", methods=["GET"])
