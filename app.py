@@ -29,7 +29,7 @@ def upload_file():
     file.save("arbre.json")  # Enregistre directement dans la racine
     return "File uploaded successfully", 200
 
-@app.route('/askIA', methods=['GET'])
+@app.route('/askIA', methods=['POST'])
 def calculate():
     # Récupération des paramètres de la requête
     data = request.json
