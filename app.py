@@ -47,7 +47,7 @@ def calculate():
     if None in [gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease]:
         return jsonify({"error": "Missing parameters "}), 400
     # Retourner le résultat
-    return jsonify({"reception reussie"}), 200
+    return jsonify({"message":"reception reussie"}), 200
 
 if __name__ == "__main__":
     import os
