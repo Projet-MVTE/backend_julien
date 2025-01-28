@@ -44,9 +44,9 @@ def calculate():
     
     # Vérification des paramètres
     if a is None or b is None or operation is None:
-        return jsonify({"error": "Missing parameters. Please provide 'a', 'b', and 'operation'."}), 400
+        return jsonify({"error": "Missing parameters."}), 400
     # Retourner le résultat
-    return jsonify({"result": "test"}), 200
+    return jsonify({"reception reussie"}), 200
 
 if __name__ == "__main__":
     import os
