@@ -41,6 +41,7 @@ def calculate():
     mvteType = request.args.get('mvteType', type=str)
     anticoagulantDurationCategory = request.args.get('anticoagulantDurationCategory', type=str)
     chronicInflammatoryDisease = request.args.get('chronicInflammatoryDisease', type=str)
+    last_param = request.args.get('last_param', type=str)
     
     # Vérification des paramètres
     if None in [gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease]:
