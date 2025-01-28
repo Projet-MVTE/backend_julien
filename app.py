@@ -29,19 +29,18 @@ def upload_file():
     file.save("arbre.json")  # Enregistre directement dans la racine
     return "File uploaded successfully", 200
 
-@app.route('/askIA', methods=['POST'])
+@app.route('/askIA', methods=['GET'])
 def calculate():
     # Récupération des paramètres de la requête
-    data = request.json
-    gender = data.get('gender', None)
-    weight = data.get('weight', None)
-    height = data.get('height', None)
-    ageDiagnostic = data.get('ageDiagnostic', None)
-    anticoagulantDuration = data.get('anticoagulantDuration', None)
-    diagnosticAgeCategory = data.get('diagnosticAgeCategory', None)
-    mvteType = data.get('mvteType', None)
-    anticoagulantDurationCategory = data.get('anticoagulantDurationCategory', None)
-    chronicInflammatoryDisease = data.get('chronicInflammatoryDisease', None)
+    gender = request.args.get('gender', type=str)
+    weight = request.args.get('weight', type=float)
+    height = request.args.get('height', type=float)
+    ageDiagnostic = request.args.get('ageDiagnostic', type=float)
+    anticoagulantDuration = request.args.get('anticoagulantDuration', type=float)
+    diagnosticAgeCategory = request.args.get('diagnosticAgeCategory', type=str)
+    mvteType = request.args.get('mvteType', type=str)
+    anticoagulantDurationCategory = request.args.get('anticoagulantDurationCategory', type=str)
+    chronicInflammatoryDisease = request.args.get('chronicInflammatoryDisease', type=str)
     
     # Vérification des paramètres
     if None in [gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease]:
