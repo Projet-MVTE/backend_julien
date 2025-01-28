@@ -41,12 +41,12 @@ def calculate():
     mvteType = request.args.get('mvteType', type=str)
     anticoagulantDurationCategory = request.args.get('anticoagulantDurationCategory', type=str)
     chronicInflammatoryDisease = request.args.get('chronicInflammatoryDisease', type=str)
-    
+    riskFactors = request.args.get('riskFactors', type=dict)
     # Vérification des paramètres
-    if None in [gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease]:
+    if None in [gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease, riskFactors]:
         return jsonify({"error": "Missing parameters "}), 400
     # Retourner le résultat
-    return jsonify({"message":"reception reussie "+ str([gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease])}), 200
+    return jsonify({"message":"reception reussie "+ str([gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease, riskFactors])}), 200
 
 if __name__ == "__main__":
     import os
