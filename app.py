@@ -43,7 +43,7 @@ def calculate():
     chronicInflammatoryDisease = request.args.get('chronicInflammatoryDisease', type=str)
     
     # Vérification des paramètres
-    if a is None or b is None or operation is None:
+    if None in [gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, , anticoagulantDurationCategory, chronicInflammatoryDisease]:
         return jsonify({"error": "Missing parameters."}), 400
     # Retourner le résultat
     return jsonify({"reception reussie"}), 200
