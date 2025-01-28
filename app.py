@@ -32,10 +32,16 @@ def upload_file():
 @app.route('/askIA', methods=['GET'])
 def calculate():
     # Récupération des paramètres de la requête
-    a = request.args.get('a', type=float)
-    b = request.args.get('b', type=float)
-    operation = request.args.get('operation', type=str)
-
+    gender = request.args.get('gender', type=str)
+    weight = request.args.get('weight', type=float)
+    height = request.args.get('height', type=float)
+    ageDiagnostic = request.args.get('ageDiagnostic', type=float)
+    anticoagulantDuration = request.args.get('anticoagulantDuration', type=float)
+    diagnosticAgeCategory = request.args.get('diagnosticAgeCategory', type=str)
+    mvteType = request.args.get('mvteType', type=str)
+    anticoagulantDurationCategory = request.args.get('anticoagulantDurationCategory', type=str)
+    chronicInflammatoryDisease = request.args.get('chronicInflammatoryDisease', type=str)
+    
     # Vérification des paramètres
     if a is None or b is None or operation is None:
         return jsonify({"error": "Missing parameters. Please provide 'a', 'b', and 'operation'."}), 400
