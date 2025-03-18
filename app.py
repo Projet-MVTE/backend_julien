@@ -294,6 +294,50 @@ def calculate():
     anticoagulantDurationCategory = request.args.get('anticoagulantDurationCategory', type=str)
     chronicInflammatoryDisease = request.args.get('chronicInflammatoryDisease', type=str)
     riskFactors = request.args.get('riskFactors', type=float)
+
+    #Preparation des parametres pour l'IA
+    sample_6 = {
+        'SEXE': 2,
+        'POIDS': 48.0,
+        'TAILLE': 163.0,
+        'IMC': 18.066167337875,
+        'AGEDIAG': 75.01,
+        'AGEDIAG_cl': '(50,65]',
+        'MVTE_INITIALE_cl': 'EP+TVP',
+        'DUREE_TTT': 231,
+        'DUREE_TTT_cl': '180-360',
+        'POSTOP': 0,
+        'PLATRE': 0,
+        'GROSSESSE': 0,
+        'POSTPART': 0.0,
+        'HOSPM3': 1.0,
+        'VOYAGE': 0.0,
+        'CO': 0.0,
+        'THS': 0.0,
+        'ATCDMVT': 0.0,
+        'ATCDFAM': 1.0,
+        'MALADIE_INFLAM': 0,
+        'avcISCHEMIQUE': 0,
+        'avecHEMORRAGIQUE': 0,
+        'Pneumopathie_interstitielle': 0,
+        'bpco': 0,
+        'ATCD_HYPOTHYR': 0,
+        'ATCD_HYPERTHYR': 0,
+        'ATCD_RENAL': 0,
+        'ATCD_CARDIOPATH_ISCHEMIQUE': 0,
+        'ATCD_INSUFHEP_CHRQ': 0,
+        'ATCD_CARDIOPATH_RYTHMIQUE': 0,
+        'CANCER': 0,
+        'RISK_FACTOR': 'NON_PROVOQUE',
+        'exposition_risque_annees': 0.777570912276859
+    }
+
+    #Appel de l'IA
+    preprocessed_new_sample = preprocess_new_sample(sample_6)
+    df_new_sample=pd.DataFrame(preprocessed_new_sample,columns=feature_names)
+    df_new_sample.to_csv('data/new_sample_server.csv',index=False)
+    sample_prediction, explanation_file = predict_and_explain()
+    
     # Vérification des paramètres
     if None in [gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease, riskFactors]:
         return jsonify({"error": "Missing parameters "+ str([gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease, riskFactors])}), 400
