@@ -1,7 +1,7 @@
 flask
 pandas
 numpy
-sklearn
+scikit-learn
 imblearn
 xgboost
 lime
