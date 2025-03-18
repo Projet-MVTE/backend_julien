@@ -1,5 +1,24 @@
-from flask import Flask, jsonify, send_file, request
+################################################################################
+############################### IA Code ########################################
+################################################################################
+
 import pandas as pd
+import numpy as np
+from sklearn.model_selection import StratifiedKFold, train_test_split
+import sklearn.preprocessing
+from imblearn.over_sampling import SMOTENC
+import xgboost as xgb
+from sklearn.metrics import precision_recall_curve
+import lime
+import lime.lime_tabular
+
+
+
+################################################################################
+############################### Server Code ####################################
+################################################################################
+
+from flask import Flask, jsonify, send_file, request
 
 app = Flask(__name__)
 
