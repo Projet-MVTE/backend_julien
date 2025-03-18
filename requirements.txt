@@ -1,2 +1,7 @@
 flask
 pandas
+numpy
+sklearn
+imblearn
+xgboost
+lime
