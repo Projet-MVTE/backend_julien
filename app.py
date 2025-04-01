@@ -252,7 +252,7 @@ feature_names = [ 'SEXE','POIDS', 'TAILLE','IMC', 'AGEDIAG','AGEDIAG_cl',
 
 from flask import Flask, jsonify, send_file, request, render_template
 import os
-import json
+import ast
 
 app = Flask(__name__)
 
@@ -348,7 +348,8 @@ def askIA():
         riskFactorsList = request.args.get('riskFactorsList', type=str)
         riskFactorsList.replace('true', '"true"')
         riskFactorsList.replace('false', '"false"')
-        dic = json.loads(riskFactorsList)
+        """
+        dic = ast.literal_eval(riskFactorsList)
 
         if dic["chirurgie"]=="true":
             POSTOP=1
@@ -419,7 +420,7 @@ def askIA():
             ATCDFAM=0
         else:
             return jsonify({"error":"familial_MVTE not valid, "+str(dic["familial_MVTE"])})
-
+        """
 
         
         riskFactor = request.args.get('riskFactor', type=str)
