@@ -346,7 +346,50 @@ def askIA():
             return jsonify({"error":"chronicInflammatoryDisease not valid, "+str(chronicInflammatoryDisease)})
         
         riskFactorsList = request.args.get('riskFactorsList', type=str)
-        
+        riskFactorsList = riskFactorsList.replace("'",'"')
+        dic = json.loads(riskFactorsList)
+
+        if dic["chirurgie"]=="true":
+            POSTOP=1
+        elif dic["chirurgie"]=="false":
+            POSTOP=0
+        else:
+            return jsonify({"error":"chirurgie not valid, "+str(dic["chirurgie"])})
+
+        if dic["platre"]=="true":
+            PLATRE=1
+        elif dic["platre"]=="false":
+            PLATRE=0
+        else:
+            return jsonify({"error":"platre not valid, "+str(dic["platre"])})
+
+        if dic["grossesse"]=="true":
+            GROSSESSE=1
+        elif dic["grossesse"]=="false":
+            GROSSESSE=0
+        else:
+            return jsonify({"error":"grossesse not valid, "+str(dic["grossesse"])})
+
+        if dic["post_partum"]=="true":
+            POSTPART=1
+        elif dic["post_partum"]=="false":
+            POSTPART=0
+        else:
+            return jsonify({"error":"post_partum not valid, "+str(dic["post_partum"])})
+
+        if dic["hospitalisation"]=="true":
+            HOSPM3=1
+        elif dic["hospitalisation"]=="false":
+            HOSPM3=0
+        else:
+            return jsonify({"error":"hospitalisation not valid, "+str(dic["hospitalisation"])})
+
+        if dic["voyage"]=="true":
+            VOYAGE=1
+        elif dic["voyage"]=="false":
+            VOYAGE=0
+        else:
+            return jsonify({"error":"voyage not valid, "+str(dic["voyage"])})
         
         riskFactor = request.args.get('riskFactor', type=str)
         if riskFactor=='MAJOR_TRANSIENT':
