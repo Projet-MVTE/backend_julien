@@ -317,7 +317,7 @@ def askIA():
             DUREE_TTT_cl = "90-180"
         elif 180<DUREE_TTT<=360:
             DUREE_TTT_cl = "180-360"
-        elif 360<DUREE_TT:
+        elif 360<DUREE_TTT:
             DUREE_TTT_cl = ">360"
         else :
             return jsonify({"error":"anticoagulantDuration not valid, "+str(anticoagulantDuration)})
