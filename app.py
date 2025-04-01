@@ -344,10 +344,11 @@ def askIA():
             MALADIE_INFLAM = 0
         else:
             return jsonify({"error":"chronicInflammatoryDisease not valid, "+str(chronicInflammatoryDisease)})
+
+        chirurgie, platre, grossesse, post_partum, hospitalisation, voyage, contraception, menopause, antecedent_MVTE, familial_MVTE, AVC_isch, AVC_hem, pneumopathie, BPCO,hypothyroidie, hyperthyroidie, maladie_renale, cardiopathie_coronarienne, hepatique, rythmique, cancer =  "chirurgie", "platre", "grossesse", "post_partum", "hospitalisation", "voyage", "contraception", "menopause", "antecedent_MVTE", "familial_MVTE", "AVC_isch", "AVC_hem", "pneumopathie", "BPCO","hypothyroidie", "hyperthyroidie", "maladie_renale", "cardiopathie_coronarienne", "hepatique", "rythmique", "cancer"     
+        riskFactorsList = request.args.get('riskFactorsList', type=str).replace('true', True).replace('false', False)
+        dic = ast.literal_eval(riskFactorsList)
         
-        riskFactorsList = request.args.get('riskFactorsList', type=str)
-        riskFactorsList.replace('true', '"true"')
-        riskFactorsList.replace('false', '"false"')
         """
         dic = ast.literal_eval(riskFactorsList)
 
