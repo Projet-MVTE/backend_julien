@@ -424,8 +424,83 @@ def askIA():
         else:
             return jsonify({"error":"familial_MVTE not valid, "+str(dic["familial_MVTE"])})
 
+        if dic["AVC_isch"]=="true":
+            avcISCHEMIQUE=int(1)
+        elif dic["AVC_isch"]=="false":
+            avcISCHEMIQUE=int(0)
+        else:
+            return jsonify({"error":"AVC_isch not valid, "+str(dic["AVC_isch"])})
 
-        
+        if dic["AVC_hem"]=="true":
+            avecHEMORRAGIQUE=int(1)
+        elif dic["AVC_hem"]=="false":
+            avecHEMORRAGIQUE=int(0)
+        else:
+            return jsonify({"error":"AVC_hem not valid, "+str(dic["AVC_hem"])})
+
+        if dic["pneumopathie"]=="true":
+            Pneumopathie_interstitielle=int(1)
+        elif dic["pneumopathie"]=="false":
+            Pneumopathie_interstitielle=int(0)
+        else:
+            return jsonify({"error":"pneumopathie not valid, "+str(dic["pneumopathie"])})
+
+        if dic["BPCO"]=="true":
+            bpco=int(1)
+        elif dic["BPCO"]=="false":
+            bpco=int(0)
+        else:
+            return jsonify({"error":"BPCO not valid, "+str(dic["BPCO"])})
+
+        if dic["hypothyroidie"]=="true":
+            ATCD_HYPOTHYR=int(1)
+        elif dic["hypothyroidie"]=="false":
+            ATCD_HYPOTHYR=int(0)
+        else:
+            return jsonify({"error":"hypothyroidie not valid, "+str(dic["hypothyroidie"])})
+
+        if dic["hyperthyroidie"]=="true":
+            ATCD_HYPERTHYR=int(1)
+        elif dic["hyperthyroidie"]=="false":
+            ATCD_HYPERTHYR=int(0)
+        else:
+            return jsonify({"error":"hyperthyroidie not valid, "+str(dic["hyperthyroidie"])})
+
+        if dic["maladie_renale"]=="true":
+            ATCD_RENAL=int(1)
+        elif dic["maladie_renale"]=="false":
+            ATCD_RENAL=int(0)
+        else:
+            return jsonify({"error":"maladie_renale not valid, "+str(dic["maladie_renale"])})
+
+        if dic["cardiopathie_coronarienne"]=="true":
+            ATCD_CARDIOPATH_ISCHEMIQUE=int(1)
+        elif dic["cardiopathie_coronarienne"]=="false":
+            ATCD_CARDIOPATH_ISCHEMIQUE=int(0)
+        else:
+            return jsonify({"error":"cardiopathie_coronarienne not valid, "+str(dic["cardiopathie_coronarienne"])})
+
+        if dic["hepatique"]=="true":
+            ATCD_INSUFHEP_CHRQ=int(1)
+        elif dic["hepatique"]=="false":
+            ATCD_INSUFHEP_CHRQ=int(0)
+        else:
+            return jsonify({"error":"hepatique not valid, "+str(dic["hepatique"])})
+
+        if dic["rythmique"]=="true":
+            ATCD_CARDIOPATH_RYTHMIQUE=int(1)
+        elif dic["rythmique"]=="false":
+            ATCD_CARDIOPATH_RYTHMIQUE=int(0)
+        else:
+            return jsonify({"error":"rythmique not valid, "+str(dic["rythmique"])})
+
+        if dic["cancer"]=="true":
+            CANCER=int(1)
+        elif dic["cancer"]=="false":
+            CANCER=int(0)
+        else:
+            return jsonify({"error":"cancer not valid, "+str(dic["cancer"])})
+
         riskFactor = request.args.get('riskFactor', type=str)
         if riskFactor=='MAJOR_TRANSIENT':
             RISK_FACTOR = "MAJOR_TRANSIENT"
