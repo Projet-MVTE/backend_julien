@@ -282,7 +282,7 @@ def upload_file():
     return "File uploaded successfully", 200
 
 @app.route('/askIA', methods=['GET'])
-def calculate():
+def askIA():
     # Récupération des paramètres de la requête
     gender = request.args.get('gender', type=str)
     weight = request.args.get('weight', type=float)
@@ -343,7 +343,7 @@ def calculate():
         return jsonify({"error": "Missing parameters "+ str([gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease, riskFactors])}), 400
     # Retourner le résultat
     #return jsonify({"message":"reception reussie "+ str([gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease, riskFactors])}), 200
-    return jsonify({"diagnosis": "message 1", "risk_score" : "message 2"}), 200
+    return jsonify({"diagnosis": "message 1", "risk_score" : riskFactors}), 200
 
 if __name__ == "__main__":
     import os
