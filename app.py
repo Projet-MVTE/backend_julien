@@ -355,72 +355,72 @@ def askIA():
         dic = json.loads(riskFactorsList) # convertit en dictionnaire
 
         if dic["chirurgie"]=="true":
-            POSTOP=1
+            POSTOP=int(1)
         elif dic["chirurgie"]=="false":
-            POSTOP=0
+            POSTOP=int(0)
         else:
             return jsonify({"error":"chirurgie not valid, "+str(dic["chirurgie"])})
 
         if dic["platre"]=="true":
-            PLATRE=1
+            PLATRE=int(1)
         elif dic["platre"]=="false":
-            PLATRE=0
+            PLATRE=int(0)
         else:
             return jsonify({"error":"platre not valid, "+str(dic["platre"])})
 
         if dic["grossesse"]=="true":
-            GROSSESSE=1
+            GROSSESSE=int(1)
         elif dic["grossesse"]=="false":
-            GROSSESSE=0
+            GROSSESSE=int(0)
         else:
             return jsonify({"error":"grossesse not valid, "+str(dic["grossesse"])})
 
         if dic["post_partum"]=="true":
-            POSTPART=1
+            POSTPART=float(1)
         elif dic["post_partum"]=="false":
-            POSTPART=0
+            POSTPART=flaot(0)
         else:
             return jsonify({"error":"post_partum not valid, "+str(dic["post_partum"])})
 
         if dic["hospitalisation"]=="true":
-            HOSPM3=1
+            HOSPM3=float(1)
         elif dic["hospitalisation"]=="false":
-            HOSPM3=0
+            HOSPM3=float(0)
         else:
             return jsonify({"error":"hospitalisation not valid, "+str(dic["hospitalisation"])})
 
         if dic["voyage"]=="true":
-            VOYAGE=1
+            VOYAGE=float(1)
         elif dic["voyage"]=="false":
-            VOYAGE=0
+            VOYAGE=float(0)
         else:
             return jsonify({"error":"voyage not valid, "+str(dic["voyage"])})
 
         if dic["contraception"]=="true":
-            CO=1
+            CO=float(1)
         elif dic["contraception"]=="false":
-            CO=0
+            CO=float(0)
         else:
             return jsonify({"error":"contraception not valid, "+str(dic["contraception"])})
 
         if dic["menopause"]=="true":
-            THS=1
+            THS=float(1)
         elif dic["menopause"]=="false":
-            THS=0
+            THS=float(0)
         else:
             return jsonify({"error":"menopause not valid, "+str(dic["menopause"])})
 
         if dic["antecedent_MVTE"]=="true":
-            ATCDMVT=1
+            ATCDMVT=float(1)
         elif dic["antecedent_MVTE"]=="false":
-            ATCDMVT=0
+            ATCDMVT=float(0)
         else:
             return jsonify({"error":"antecedent_MVTE not valid, "+str(dic["antecedent_MVTE"])})
 
         if dic["familial_MVTE"]=="true":
-            ATCDFAM=1
+            ATCDFAM=float(1)
         elif dic["familial_MVTE"]=="false":
-            ATCDFAM=0
+            ATCDFAM=float(0)
         else:
             return jsonify({"error":"familial_MVTE not valid, "+str(dic["familial_MVTE"])})
 
@@ -454,16 +454,16 @@ def askIA():
             'MVTE_INITIALE_cl': MVTE_INITIALE_cl,#'EP+TVP'
             'DUREE_TTT': DUREE_TTT,#231
             'DUREE_TTT_cl': DUREE_TTT_cl,#'180-360'
-            'POSTOP': 0,
-            'PLATRE': 0,
-            'GROSSESSE': 0,
-            'POSTPART': 0.0,
-            'HOSPM3': 1.0,
-            'VOYAGE': 0.0,
-            'CO': 0.0,
-            'THS': 0.0,
-            'ATCDMVT': 0.0,
-            'ATCDFAM': 1.0,
+            'POSTOP': POSTOP,
+            'PLATRE': PLATRE,
+            'GROSSESSE': GROSSESSE,
+            'POSTPART': POSTPART,
+            'HOSPM3': HOSPM3,
+            'VOYAGE': VOYAGE,
+            'CO': CO,
+            'THS': THS,
+            'ATCDMVT':ATCDMVT ,
+            'ATCDFAM': ATCDFAM,
             'MALADIE_INFLAM': MALADIE_INFLAM,#0
             'avcISCHEMIQUE': 0,
             'avecHEMORRAGIQUE': 0,
