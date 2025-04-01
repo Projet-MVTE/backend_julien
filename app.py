@@ -292,7 +292,7 @@ def askIA():
         elif gender=="F":
             SEXE = int(2)
         else :
-            raise Exception("Gender not valid")
+            return jsonify({"error":"Gender not valid, "+str(gender)})
         
         weight = request.args.get('weight', type=float)
         POIDS = float(min(max(39, weight),165))
@@ -309,7 +309,7 @@ def askIA():
         elif 65<AGEDIAG<=100:
             AGEDIAG_cl = '(65,100]'
         else:
-            raise Exception("ageDiagnostic not valid")
+            return jsonify({"error":"ageDiagnostic not valid, "+str(ageDiagnostic)})
         
         anticoagulantDuration = request.args.get('anticoagulantDuration', type=float)
         DUREE_TTT = int(min(max(90,anticoagulantDuration),301))
@@ -319,6 +319,8 @@ def askIA():
             DUREE_TTT_cl = "180-360"
         elif 360<DUREE_TT:
             DUREE_TTT_cl = ">360"
+        else :
+            return jsonify({"error":"anticoagulantDuration not valid, "+str(anticoagulantDuration)})
         
         diagnosticAgeCategory = request.args.get('diagnosticAgeCategory', type=str)
         
@@ -330,7 +332,7 @@ def askIA():
         elif mvteType=="EPseule":
             MVTE_INITIALE_cl = "EPseule"
         else :
-            raise Exception("mvteType not valid")
+            return jsonify({"error":"mvteType not valid, "+str(mvteType)})
         
         anticoagulantDurationCategory = request.args.get('anticoagulantDurationCategory', type=str)
         
@@ -340,7 +342,7 @@ def askIA():
         elif chronicInflammatoryDisease=="0":
             MALADIE_INFLAM = 0
         else:
-            raise Exception("chronicInflammatoryDisease not valid")
+            return jsonify({"error":"chronicInflammatoryDisease not valid, "+str(chronicInflammatoryDisease)})
         
         riskFactorsList = request.args.get('riskFactorsList', type=str)
         
@@ -356,7 +358,7 @@ def askIA():
         elif riskFactor=='MINOR_PERSISTANT':
             RISK_FACTOR = "MINOR_PERSISTANT"
         else:
-            raise Exception("riskFactor not valid")
+            return jsonify({"error":"riskFactor not valid, "+str(riskFactor)})
         
         expositionRisqueAnnee = request.args.get('expositionRisqueAnnee', type=float)
         exposition_risque_annees = float(min(max(0.01916548,expositionRisqueAnnee),17.84580002))
