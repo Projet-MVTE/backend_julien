@@ -328,10 +328,10 @@ def askIA():
         mvteType = request.args.get('mvteType', type=str)
         if mvteType=="EP+TVP":
             MVTE_INITIALE_cl = "EP+TVP"
-        elif mvteType=="TVPseule":
-            MVTE_INITIALE_cl = "TVP seule"
-        elif mvteType=="EPseule":
-            MVTE_INITIALE_cl = "EP seule"
+        elif mvteType=="TVP seule":
+            MVTE_INITIALE_cl = "TVPseule"
+        elif mvteType=="EP seule":
+            MVTE_INITIALE_cl = "EPseule"
         else :
             return jsonify({"error":"mvteType not valid, "+str(mvteType)})
         
@@ -390,6 +390,13 @@ def askIA():
             VOYAGE=0
         else:
             return jsonify({"error":"voyage not valid, "+str(dic["voyage"])})
+
+        if dic["contraception"]=="true":
+            VOYAGE=1
+        elif dic["contraception"]=="false":
+            VOYAGE=0
+        else:
+            return jsonify({"error":"contraception not valid, "+str(dic["contraception"])})
         
         riskFactor = request.args.get('riskFactor', type=str)
         if riskFactor=='MAJOR_TRANSIENT':
