@@ -250,7 +250,7 @@ feature_names = [ 'SEXE','POIDS', 'TAILLE','IMC', 'AGEDIAG','AGEDIAG_cl',
 ############################### Server Code ####################################################################################
 ################################################################################################################################
 
-from flask import Flask, jsonify, send_file, request
+from flask import Flask, jsonify, send_file, request, render_template
 
 app = Flask(__name__)
 
@@ -350,6 +350,10 @@ def askIA():
         return jsonify({"explanation_file": explanation_file, "sample_prediction" : sample_prediction}), 200
     except Exception as e:
         return jsonify({"Error":e})
+    
+@app.route('/explanation_file')
+def home():
+    return render_template('lime_explanation_with_original_values.html')  # Charge index.html
 
 if __name__ == "__main__":
     import os
