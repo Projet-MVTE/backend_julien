@@ -328,9 +328,9 @@ def askIA():
         if mvteType=="EP+TVP":
             MVTE_INITIALE_cl = "EP+TVP"
         elif mvteType=="TVPseule":
-            MVTE_INITIALE_cl = "TVPseule"
+            MVTE_INITIALE_cl = "TVP seule"
         elif mvteType=="EPseule":
-            MVTE_INITIALE_cl = "EPseule"
+            MVTE_INITIALE_cl = "EP seule"
         else :
             return jsonify({"error":"mvteType not valid, "+str(mvteType)})
         
