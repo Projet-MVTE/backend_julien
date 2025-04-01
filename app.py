@@ -251,6 +251,7 @@ feature_names = [ 'SEXE','POIDS', 'TAILLE','IMC', 'AGEDIAG','AGEDIAG_cl',
 ################################################################################################################################
 
 from flask import Flask, jsonify, send_file, request, render_template
+import os
 
 app = Flask(__name__)
 
@@ -341,19 +342,23 @@ def askIA():
         df_new_sample.to_csv('data/new_sample_server.csv',index=False)
         sample_prediction, explanation_file = predict_and_explain()
         
+        final_file_name = str(sample_prediction)+explanation_file
+        os.rename(explanation_file, final_file_name)
+        
         # Vérification des paramètres
         if None in [gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease, riskFactorsList, riskFactor, expositionRisqueAnnee]:
             #return jsonify({"diagnosis": explanation_file, "risk_score" : sample_prediction}), 200
             return jsonify({"error": "Missing parameters "+ str([gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease, riskFactorsList, riskFactor, expositionRisqueAnnee])}), 400
         # Retourner le résultat
         #return jsonify({"message":"reception reussie "+ str([gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease, riskFactors])}), 200
-        return jsonify({"explanation_file": explanation_file, "sample_prediction" : sample_prediction}), 200
+        #return jsonify({"explanation_file": explanation_file, "sample_prediction" : sample_prediction}), 200
+        return send_file(final_file_name, as_attachment=True, mimetype='text/html')
     except Exception as e:
         return jsonify({"Error":e})
     
 @app.route('/explanation_file', methods=["GET"])
 def show_explanation_file():
-    return jsonify({"message":"test julien"}), send_file('lime_explanation_with_original_values.html', as_attachment=True, mimetype='text/html')  # Charge index.html
+    return send_file('lime_explanation_with_original_values.html', as_attachment=True, mimetype='text/html')  # Charge index.html
 
 if __name__ == "__main__":
     import os
