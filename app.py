@@ -252,7 +252,8 @@ feature_names = [ 'SEXE','POIDS', 'TAILLE','IMC', 'AGEDIAG','AGEDIAG_cl',
 
 from flask import Flask, jsonify, send_file, request, render_template
 import os
-import ast
+import re
+import json
 
 app = Flask(__name__)
 
@@ -346,8 +347,10 @@ def askIA():
             return jsonify({"error":"chronicInflammatoryDisease not valid, "+str(chronicInflammatoryDisease)})
 
         chirurgie, platre, grossesse, post_partum, hospitalisation, voyage, contraception, menopause, antecedent_MVTE, familial_MVTE, AVC_isch, AVC_hem, pneumopathie, BPCO,hypothyroidie, hyperthyroidie, maladie_renale, cardiopathie_coronarienne, hepatique, rythmique, cancer =  "chirurgie", "platre", "grossesse", "post_partum", "hospitalisation", "voyage", "contraception", "menopause", "antecedent_MVTE", "familial_MVTE", "AVC_isch", "AVC_hem", "pneumopathie", "BPCO","hypothyroidie", "hyperthyroidie", "maladie_renale", "cardiopathie_coronarienne", "hepatique", "rythmique", "cancer"     
-        riskFactorsList = request.args.get('riskFactorsList', type=str).replace('true', 'True').replace('false', 'False')
-        dic = ast.literal_eval(riskFactorsList)
+        riskFactorsList = request.args.get('riskFactorsList', type=str)
+        riskFactorsList = re.sub(r'(\w+):', r'"\1":', riskFactorsList)
+        riskFactorsList = re.sub(r'\b(true|false)\b', r'"\1"', riskFactorsList)
+        dic = json.loads(riskFactorsList)
         
         """
         dic = ast.literal_eval(riskFactorsList)
