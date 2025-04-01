@@ -287,29 +287,91 @@ def askIA():
     try :
         # Récupération des paramètres de la requête
         gender = request.args.get('gender', type=str)
+        if gender=="M":
+            SEXE = int(1)
+        elif gender=="F":
+            SEXE = int(2)
+        else :
+            raise Exception("Gender not valid")
+        
         weight = request.args.get('weight', type=float)
+        POIDS = float(min(max(39, weight),165))
+    
         height = request.args.get('height', type=float)
+        TAILLE = float(min(max(142,height),198))
+        
         ageDiagnostic = request.args.get('ageDiagnostic', type=float)
+        AGEDIAG = float(min(max(18.07,ageDiagnostic),96.9))
+        if 0<AGEDIAG<=50:
+            AGEDIAG_cl = '(0,50]'
+        elif 50<AGEDIAG<=65:
+            AGEDIAG_cl = '(50,65]'
+        elif 65<AGEDIAG<=100:
+            AGEDIAG_cl = '(65,100]'
+        else:
+            raise Exception("ageDiagnostic not valid")
+        
         anticoagulantDuration = request.args.get('anticoagulantDuration', type=float)
+        DUREE_TTT = int(min(max(90,anticoagulantDuration),301))
+        if 90<DUREE_TTT<=180:
+            DUREE_TTT_cl = "90-180"
+        elif 180<DUREE_TTT<=360:
+            DUREE_TTT_cl = "180-360"
+        elif 360<DUREE_TT:
+            DUREE_TTT_cl = ">360"
+        
         diagnosticAgeCategory = request.args.get('diagnosticAgeCategory', type=str)
+        
         mvteType = request.args.get('mvteType', type=str)
+        if mvteType=="EP+TVP":
+            MVTE_INITIALE_cl = "EP+TVP"
+        elif mvteType=="TVPseule":
+            MVTE_INITIALE_cl = "TVPseule"
+        elif mvteType=="EPseule":
+            MVTE_INITIALE_cl = "EPseule"
+        else :
+            raise Exception("mvteType not valid")
+        
         anticoagulantDurationCategory = request.args.get('anticoagulantDurationCategory', type=str)
+        
         chronicInflammatoryDisease = request.args.get('chronicInflammatoryDisease', type=str)
+        if chronicInflammatoryDisease=="1":
+            MALADIE_INFLAM = 1
+        elif chronicInflammatoryDisease=="0":
+            MALADIE_INFLAM = 0
+        else:
+            raise Exception("chronicInflammatoryDisease not valid")
+        
         riskFactorsList = request.args.get('riskFactorsList', type=str)
+        
         riskFactor = request.args.get('riskFactor', type=str)
+        if riskFactor=='MAJOR_TRANSIENT':
+            RISK_FACTOR = "MAJOR_TRANSIENT"
+        elif riskFactor=='NON_PROVOQUE':
+            RISK_FACTOR = "NON_PROVOQUE"
+        elif riskFactor=='CANCER':
+            RISK_FACTOR = "CANCER"
+        elif riskFactor=='MINOR_TRANSIENT':
+            RISK_FACTOR = "MINOR_TRANSIENT"
+        elif riskFactor=='MINOR_PERSISTANT':
+            RISK_FACTOR = "MINOR_PERSISTANT"
+        else:
+            raise Exception("riskFactor not valid")
+        
         expositionRisqueAnnee = request.args.get('expositionRisqueAnnee', type=float)
+        exposition_risque_annees = float(min(max(0.01916548,expositionRisqueAnnee),17.84580002))
     
         #Preparation des parametres pour l'IA
         sample_6 = {
-            'SEXE': 2,
-            'POIDS': 48.0,
-            'TAILLE': 163.0,
+            'SEXE': SEXE,#2
+            'POIDS': POIDS,#48.0
+            'TAILLE': TAILLE, #163.0
             'IMC': 18.066167337875,
-            'AGEDIAG': 75.01,
-            'AGEDIAG_cl': '(50,65]',
-            'MVTE_INITIALE_cl': 'EP+TVP',
-            'DUREE_TTT': 231,
-            'DUREE_TTT_cl': '180-360',
+            'AGEDIAG': AGEDIAG,#75.01
+            'AGEDIAG_cl': AGEDIAG_cl,#'(50,65]'
+            'MVTE_INITIALE_cl': MVTE_INITIALE_cl,#'EP+TVP'
+            'DUREE_TTT': DUREE_TTT,#231
+            'DUREE_TTT_cl': DUREE_TTT_cl,#'180-360'
             'POSTOP': 0,
             'PLATRE': 0,
             'GROSSESSE': 0,
@@ -320,7 +382,7 @@ def askIA():
             'THS': 0.0,
             'ATCDMVT': 0.0,
             'ATCDFAM': 1.0,
-            'MALADIE_INFLAM': 0,
+            'MALADIE_INFLAM': MALADIE_INFLAM,#0
             'avcISCHEMIQUE': 0,
             'avecHEMORRAGIQUE': 0,
             'Pneumopathie_interstitielle': 0,
@@ -332,8 +394,8 @@ def askIA():
             'ATCD_INSUFHEP_CHRQ': 0,
             'ATCD_CARDIOPATH_RYTHMIQUE': 0,
             'CANCER': 0,
-            'RISK_FACTOR': 'NON_PROVOQUE',
-            'exposition_risque_annees': 0.777570912276859
+            'RISK_FACTOR': RISK_FACTOR,#'NON_PROVOQUE'
+            'exposition_risque_annees': exposition_risque_annees #0.777570912276859
         }
     
         #Appel de l'IA
