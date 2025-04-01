@@ -343,10 +343,11 @@ def askIA():
         
         # Vérification des paramètres
         if None in [gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease, riskFactorsList, riskFactor, expositionRisqueAnnee]:
-            return jsonify({"error": "Missing parameters "+ str([gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease, riskFactorsList, riskFactor, expositionRisqueAnnee])}), 400
+            return jsonify({"diagnosis": explanation_file, "risk_score" : sample_prediction}), 200
+            #return jsonify({"error": "Missing parameters "+ str([gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease, riskFactorsList, riskFactor, expositionRisqueAnnee])}), 400
         # Retourner le résultat
         #return jsonify({"message":"reception reussie "+ str([gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease, riskFactors])}), 200
-        return jsonify({"diagnosis": "message 1", "risk_score" : riskFactors}), 200
+        return jsonify({"diagnosis": explanation_file, "risk_score" : sample_prediction}), 200
     except Exception as e:
         return jsonify({"Error":e})
 
