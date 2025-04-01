@@ -341,24 +341,16 @@ def askIA():
         df_new_sample=pd.DataFrame(preprocessed_new_sample,columns=feature_names)
         df_new_sample.to_csv('data/new_sample_server.csv',index=False)
         sample_prediction, explanation_file = predict_and_explain()
-        
+
+        # On met le resultat de l'IA dans le nom du fichier. Cela permet d'envoyer dans une seule requete le fichier et le resultat de l'ia
         final_file_name = str(sample_prediction)+explanation_file
-        os.rename(explanation_file, final_file_name)
-        
+        os.rename(explanation_file, final_file_name) 
         # Vérification des paramètres
         if None in [gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease, riskFactorsList, riskFactor, expositionRisqueAnnee]:
-            #return jsonify({"diagnosis": explanation_file, "risk_score" : sample_prediction}), 200
             return jsonify({"error": "Missing parameters "+ str([gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease, riskFactorsList, riskFactor, expositionRisqueAnnee])}), 400
-        # Retourner le résultat
-        #return jsonify({"message":"reception reussie "+ str([gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease, riskFactors])}), 200
-        #return jsonify({"explanation_file": explanation_file, "sample_prediction" : sample_prediction}), 200
         return send_file(final_file_name, as_attachment=True, mimetype='text/html')
     except Exception as e:
         return jsonify({"Error":e})
-    
-@app.route('/explanation_file', methods=["GET"])
-def show_explanation_file():
-    return send_file('lime_explanation_with_original_values.html', as_attachment=True, mimetype='text/html')  # Charge index.html
 
 if __name__ == "__main__":
     import os
