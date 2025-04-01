@@ -293,7 +293,9 @@ def askIA():
     mvteType = request.args.get('mvteType', type=str)
     anticoagulantDurationCategory = request.args.get('anticoagulantDurationCategory', type=str)
     chronicInflammatoryDisease = request.args.get('chronicInflammatoryDisease', type=str)
-    riskFactors = request.args.get('riskFactors', type=float)
+    riskFactorsList = request.args.get('riskFactorsList', type=float)
+    riskFactor = request.args.get('riskFactor', type=str)
+    expositionRisqueAnnee = request.args.get(' expositionRisqueAnnee', type=float)
 
     #Preparation des parametres pour l'IA
     sample_6 = {
@@ -339,8 +341,8 @@ def askIA():
     sample_prediction, explanation_file = predict_and_explain()
     
     # Vérification des paramètres
-    if None in [gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease, riskFactors]:
-        return jsonify({"error": "Missing parameters "+ str([gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease, riskFactors])}), 400
+    if None in [gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease, riskFactorsList, riskFactor, expositionRisqueAnnee]:
+        return jsonify({"error": "Missing parameters "+ str([gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease, riskFactorsList, riskFactor, expositionRisqueAnnee])}), 400
     # Retourner le résultat
     #return jsonify({"message":"reception reussie "+ str([gender, weight, height, ageDiagnostic, anticoagulantDuration, diagnosticAgeCategory, mvteType, anticoagulantDurationCategory, chronicInflammatoryDisease, riskFactors])}), 200
     return jsonify({"diagnosis": "message 1", "risk_score" : riskFactors}), 200
