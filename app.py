@@ -346,6 +346,8 @@ def askIA():
             return jsonify({"error":"chronicInflammatoryDisease not valid, "+str(chronicInflammatoryDisease)})
         
         riskFactorsList = request.args.get('riskFactorsList', type=str)
+        riskFactorsList.replace('true', '"true"')
+        riskFactorsList.replace('false', '"false"')
         dic = ast.literal_eval(riskFactorsList)
 
         if dic["chirurgie"]=="true":
