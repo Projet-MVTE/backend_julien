@@ -351,8 +351,8 @@ def askIA():
     except Exception as e:
         return jsonify({"Error":e})
     
-@app.route('/explanation_file')
-def home():
+@app.route('/explanation_file', methods=["GET"])
+def show_explanation_file():
     return render_template('lime_explanation_with_original_values.html')  # Charge index.html
 
 if __name__ == "__main__":
