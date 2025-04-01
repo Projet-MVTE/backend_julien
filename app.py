@@ -355,7 +355,7 @@ def askIA():
             RISK_FACTOR = "CANCER"
         elif riskFactor=='MINOR_TRANSIENT':
             RISK_FACTOR = "MINOR_TRANSIENT"
-        elif riskFactor=='MINOR_PERSISTANT':
+        elif riskFactor=='MINOR_PERSISTENT':
             RISK_FACTOR = "MINOR_PERSISTANT"
         else:
             return jsonify({"error":"riskFactor not valid, "+str(riskFactor)})
