@@ -353,9 +353,6 @@ def askIA():
         riskFactorsList = re.sub(r'(\w+):', r'"\1":', riskFactorsList) #met des guillemets autour des clés 
         riskFactorsList = re.sub(r'\b(true|false)\b', r'"\1"', riskFactorsList) #met des guillemets autour des valeurs, necessaire pour la conversion avec la bibliotheque json
         dic = json.loads(riskFactorsList) # convertit en dictionnaire
-        
-        
-        dic = ast.literal_eval(riskFactorsList)
 
         if dic["chirurgie"]=="true":
             POSTOP=1
