@@ -353,7 +353,7 @@ def askIA():
     
 @app.route('/explanation_file', methods=["GET"])
 def show_explanation_file():
-    return jsonify({"message":"test julien"})#, send_file('lime_explanation_with_original_values.html', as_attachment=True, mimetype='text/html')  # Charge index.html
+    return jsonify({"message":"test julien"}), send_file('lime_explanation_with_original_values.html', as_attachment=True, mimetype='text/html')  # Charge index.html
 
 if __name__ == "__main__":
     import os
