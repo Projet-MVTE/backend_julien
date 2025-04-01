@@ -346,7 +346,7 @@ def askIA():
             return jsonify({"error":"chronicInflammatoryDisease not valid, "+str(chronicInflammatoryDisease)})
         
         riskFactorsList = request.args.get('riskFactorsList', type=str)
-        riskFactorsList = riskFactorsList.replace("'",'"')
+        riskFactorsList = riskFactorsList.replace('"',"'")
         dic = json.loads(riskFactorsList)
 
         if dic["chirurgie"]=="true":
@@ -392,11 +392,34 @@ def askIA():
             return jsonify({"error":"voyage not valid, "+str(dic["voyage"])})
 
         if dic["contraception"]=="true":
-            VOYAGE=1
+            CO=1
         elif dic["contraception"]=="false":
-            VOYAGE=0
+            CO=0
         else:
             return jsonify({"error":"contraception not valid, "+str(dic["contraception"])})
+
+        if dic["menopause"]=="true":
+            THS=1
+        elif dic["menopause"]=="false":
+            THS=0
+        else:
+            return jsonify({"error":"menopause not valid, "+str(dic["menopause"])})
+
+        if dic["antecedent_MVTE"]=="true":
+            ATCDMVT=1
+        elif dic["antecedent_MVTE"]=="false":
+            ATCDMVT=0
+        else:
+            return jsonify({"error":"antecedent_MVTE not valid, "+str(dic["antecedent_MVTE"])})
+
+        if dic["familial_MVTE"]=="true":
+            ATCDFAM=1
+        elif dic["familial_MVTE"]=="false":
+            ATCDFAM=0
+        else:
+            return jsonify({"error":"familial_MVTE not valid, "+str(dic["familial_MVTE"])})
+
+
         
         riskFactor = request.args.get('riskFactor', type=str)
         if riskFactor=='MAJOR_TRANSIENT':
