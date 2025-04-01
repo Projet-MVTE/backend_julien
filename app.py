@@ -348,11 +348,13 @@ def askIA():
 
         chirurgie, platre, grossesse, post_partum, hospitalisation, voyage, contraception, menopause, antecedent_MVTE, familial_MVTE, AVC_isch, AVC_hem, pneumopathie, BPCO,hypothyroidie, hyperthyroidie, maladie_renale, cardiopathie_coronarienne, hepatique, rythmique, cancer =  "chirurgie", "platre", "grossesse", "post_partum", "hospitalisation", "voyage", "contraception", "menopause", "antecedent_MVTE", "familial_MVTE", "AVC_isch", "AVC_hem", "pneumopathie", "BPCO","hypothyroidie", "hyperthyroidie", "maladie_renale", "cardiopathie_coronarienne", "hepatique", "rythmique", "cancer"     
         riskFactorsList = request.args.get('riskFactorsList', type=str)
-        riskFactorsList = re.sub(r'(\w+):', r'"\1":', riskFactorsList)
-        riskFactorsList = re.sub(r'\b(true|false)\b', r'"\1"', riskFactorsList)
-        dic = json.loads(riskFactorsList)
+
+        #conversion de la chaine en dictionnaire
+        riskFactorsList = re.sub(r'(\w+):', r'"\1":', riskFactorsList) #met des guillemets autour des clés 
+        riskFactorsList = re.sub(r'\b(true|false)\b', r'"\1"', riskFactorsList) #met des guillemets autour des valeurs, necessaire pour la conversion avec la bibliotheque json
+        dic = json.loads(riskFactorsList) # convertit en dictionnaire
         
-        """
+        
         dic = ast.literal_eval(riskFactorsList)
 
         if dic["chirurgie"]=="true":
@@ -424,7 +426,7 @@ def askIA():
             ATCDFAM=0
         else:
             return jsonify({"error":"familial_MVTE not valid, "+str(dic["familial_MVTE"])})
-        """
+
 
         
         riskFactor = request.args.get('riskFactor', type=str)
