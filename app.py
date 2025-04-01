@@ -295,7 +295,7 @@ def askIA():
     chronicInflammatoryDisease = request.args.get('chronicInflammatoryDisease', type=str)
     riskFactorsList = request.args.get('riskFactorsList', type=str)
     riskFactor = request.args.get('riskFactor', type=str)
-    expositionRisqueAnnee = request.args.get(' expositionRisqueAnnee', type=str)
+    expositionRisqueAnnee = request.args.get('expositionRisqueAnnee', type=float)
 
     #Preparation des parametres pour l'IA
     sample_6 = {
