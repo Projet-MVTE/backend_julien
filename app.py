@@ -252,6 +252,7 @@ feature_names = [ 'SEXE','POIDS', 'TAILLE','IMC', 'AGEDIAG','AGEDIAG_cl',
 
 from flask import Flask, jsonify, send_file, request, render_template
 import os
+import json
 
 app = Flask(__name__)
 
@@ -345,6 +346,7 @@ def askIA():
             return jsonify({"error":"chronicInflammatoryDisease not valid, "+str(chronicInflammatoryDisease)})
         
         riskFactorsList = request.args.get('riskFactorsList', type=str)
+        
         
         riskFactor = request.args.get('riskFactor', type=str)
         if riskFactor=='MAJOR_TRANSIENT':
