@@ -252,7 +252,7 @@ feature_names = [ 'SEXE','POIDS', 'TAILLE','IMC', 'AGEDIAG','AGEDIAG_cl',
 
 from flask import Flask, jsonify, send_file, request, render_template
 import os
-import json
+import ast
 
 app = Flask(__name__)
 
@@ -346,8 +346,7 @@ def askIA():
             return jsonify({"error":"chronicInflammatoryDisease not valid, "+str(chronicInflammatoryDisease)})
         
         riskFactorsList = request.args.get('riskFactorsList', type=str)
-        riskFactorsList = riskFactorsList.replace('"',"'")
-        dic = json.loads(riskFactorsList)
+        dic = ast.literal_eval(riskFactorsList)
 
         if dic["chirurgie"]=="true":
             POSTOP=1
