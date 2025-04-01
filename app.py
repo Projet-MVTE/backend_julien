@@ -523,7 +523,7 @@ def askIA():
             'SEXE': SEXE,#2
             'POIDS': POIDS,#48.0
             'TAILLE': TAILLE, #163.0
-            'IMC': 18.066167337875,
+            'IMC': POIDS/(TAILLE**2),
             'AGEDIAG': AGEDIAG,#75.01
             'AGEDIAG_cl': AGEDIAG_cl,#'(50,65]'
             'MVTE_INITIALE_cl': MVTE_INITIALE_cl,#'EP+TVP'
@@ -540,17 +540,17 @@ def askIA():
             'ATCDMVT':ATCDMVT ,
             'ATCDFAM': ATCDFAM,
             'MALADIE_INFLAM': MALADIE_INFLAM,#0
-            'avcISCHEMIQUE': 0,
-            'avecHEMORRAGIQUE': 0,
-            'Pneumopathie_interstitielle': 0,
-            'bpco': 0,
-            'ATCD_HYPOTHYR': 0,
-            'ATCD_HYPERTHYR': 0,
-            'ATCD_RENAL': 0,
-            'ATCD_CARDIOPATH_ISCHEMIQUE': 0,
-            'ATCD_INSUFHEP_CHRQ': 0,
-            'ATCD_CARDIOPATH_RYTHMIQUE': 0,
-            'CANCER': 0,
+            'avcISCHEMIQUE': avcISCHEMIQUE,
+            'avecHEMORRAGIQUE': avecHEMORRAGIQUE,
+            'Pneumopathie_interstitielle': Pneumopathie_interstitielle,
+            'bpco': bpco,
+            'ATCD_HYPOTHYR': ATCD_HYPOTHYR,
+            'ATCD_HYPERTHYR': ATCD_HYPERTHYR,
+            'ATCD_RENAL': ATCD_RENAL,
+            'ATCD_CARDIOPATH_ISCHEMIQUE': ATCD_CARDIOPATH_ISCHEMIQUE,
+            'ATCD_INSUFHEP_CHRQ': ATCD_INSUFHEP_CHRQ,
+            'ATCD_CARDIOPATH_RYTHMIQUE': ATCD_CARDIOPATH_RYTHMIQUE,
+            'CANCER': CANCER,
             'RISK_FACTOR': RISK_FACTOR,#'NON_PROVOQUE'
             'exposition_risque_annees': exposition_risque_annees #0.777570912276859
         }
