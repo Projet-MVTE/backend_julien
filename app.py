@@ -378,7 +378,7 @@ def askIA():
         if dic["post_partum"]=="true":
             POSTPART=float(1)
         elif dic["post_partum"]=="false":
-            POSTPART=flaot(0)
+            POSTPART=float(0)
         else:
             return jsonify({"error":"post_partum not valid, "+str(dic["post_partum"])})
 
