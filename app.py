@@ -315,7 +315,7 @@ def askIA():
         
         anticoagulantDuration = request.args.get('anticoagulantDuration', type=float)
         DUREE_TTT = int(min(max(90,anticoagulantDuration),301))
-        if 90<DUREE_TTT<=180:
+        if 90<=DUREE_TTT<=180:
             DUREE_TTT_cl = "90-180"
         elif 180<DUREE_TTT<=360:
             DUREE_TTT_cl = "180-360"
