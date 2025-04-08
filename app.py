@@ -289,7 +289,7 @@ def askIA():
     try :
         # Récupération des paramètres de la requête
         gender = request.args.get('gender', type=str)
-        if gender=="M":
+        if gender=="H":
             SEXE = int(1)
         elif gender=="F":
             SEXE = int(2)
