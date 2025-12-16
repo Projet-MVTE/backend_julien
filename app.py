@@ -12,6 +12,9 @@ from sklearn.metrics import precision_recall_curve
 import lime
 import lime.lime_tabular
 
+# Apply RobustScaler instead of StandardScaler
+from sklearn.preprocessing import RobustScaler
+
 def preprocess_new_sample(new_sample: dict):
     # Data Understanding
     column_names = ['Colonne1', 'IDENT', 'SEXE', 'DATMVTE', 'POIDS', 'TAILLE', 'IMC', 'AGEDIAG', 'AGEDIAG_cl',
@@ -98,9 +101,6 @@ def preprocess_new_sample(new_sample: dict):
     smote_nc = SMOTENC(sampling_strategy=0.4, categorical_features=categorical_feature_indices, random_state=42)
     X_train_resampled, y_train_resampled = smote_nc.fit_resample(X_train, y_train)
    
-
-    # Apply RobustScaler instead of StandardScaler
-    from sklearn.preprocessing import RobustScaler
 
     robust_scaler = RobustScaler()
     X_train_balanced = robust_scaler.fit_transform(X_train_resampled)

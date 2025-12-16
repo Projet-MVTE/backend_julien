@@ -1,7 +1,7 @@
 flask
 pandas
 numpy
-scikit-learn
-imblearn
 xgboost
 lime
+scikit-learn==1.2.2
+imbalanced-learn==0.10.1
