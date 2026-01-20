@@ -1,0 +1,147 @@
+{
+  "message": "MVTE Recommendations - Built at ENSTA Bretagne",
+  "version": "1.0.0",
+  "lastUpdated": "2025-01-20",
+  "data": [
+    {
+      "id": "R75",
+      "context": "tvpProximale",
+      "grade": "strongPositive",
+      "condition": "TVP proximale",
+      "recommendation": "Instaurer immédiatement un traitement anticoagulant à effet rapide (HBPM, fondaparinux, apixaban ou rivaroxaban)."
+    },
+    {
+      "id": "R148",
+      "context": "tvpProximale",
+      "grade": "strongPositive",
+      "condition": "TVP proximale",
+      "recommendation": "Traiter par anticoagulant pendant au moins 3 mois."
+    },
+    {
+      "id": "R149",
+      "context": "tvpProximale",
+      "grade": "weakPositive",
+      "condition": "TVP proximale non provoquée",
+      "recommendation": "Discuter une poursuite du traitement anticoagulant au-delà de 3 mois en fonction du risque hémorragique."
+    },
+    {
+      "id": "R83",
+      "context": "tvpProximale",
+      "grade": "strongNegative",
+      "condition": "TVP proximale sans gravité",
+      "recommendation": "Ne pas recourir à une thrombolyse ou une thrombectomie."
+    },
+    {
+      "id": "R273",
+      "context": "tvpDistale",
+      "grade": "weakPositive",
+      "condition": "TVP distale symptomatique",
+      "recommendation": "Traiter par anticoagulant à dose curative pour 6 semaines à 3 mois en l'absence de risque hémorragique élevé."
+    },
+    {
+      "id": "R274",
+      "context": "tvpDistale",
+      "grade": "weakPositive",
+      "condition": "TVP distale à faible risque",
+      "recommendation": "Une surveillance échographique rapprochée sans anticoagulation peut être discutée."
+    },
+    {
+      "id": "R275",
+      "context": "tvpDistale",
+      "grade": "strongNegative",
+      "condition": "TVP distale",
+      "recommendation": "Ne pas poursuivre un traitement anticoagulant au-delà de 3 mois."
+    },
+    {
+      "id": "R291",
+      "context": "tvs",
+      "grade": "strongPositive",
+      "condition": "TVS > 5 cm et éloignée de la jonction saphéno-fémorale",
+      "recommendation": "Prescrire fondaparinux 2,5 mg/j pendant 45 jours."
+    },
+    {
+      "id": "R292",
+      "context": "tvs",
+      "grade": "weakPositive",
+      "condition": "TVS < 5 cm",
+      "recommendation": "Proposer traitement symptomatique (AINS, compression élastique)."
+    },
+    {
+      "id": "R294",
+      "context": "tvs",
+      "grade": "strongNegative",
+      "condition": "TVS avec hémorragie active",
+      "recommendation": "Ne pas prescrire d'anticoagulation."
+    },
+    {
+      "id": "R221",
+      "context": "cancer",
+      "grade": "strongPositive",
+      "condition": "Cancer actif",
+      "recommendation": "Utiliser une HBPM sans relais AVK pendant les 6 premiers mois."
+    },
+    {
+      "id": "R223",
+      "context": "cancer",
+      "grade": "weakPositive",
+      "condition": "Cancer actif sélectionné",
+      "recommendation": "Les AOD peuvent être discutés chez des patients sélectionnés en l'absence de risque hémorragique digestif."
+    },
+    {
+      "id": "R224",
+      "context": "cancer",
+      "grade": "strongPositive",
+      "condition": "Cancer actif après 6 mois",
+      "recommendation": "Poursuivre l'anticoagulation tant que le cancer est actif."
+    },
+    {
+      "id": "R238",
+      "context": "grossesse",
+      "grade": "strongNegative",
+      "condition": "Grossesse",
+      "recommendation": "Ne pas utiliser AVK, AOD ni fondaparinux."
+    },
+    {
+      "id": "R239",
+      "context": "grossesse",
+      "grade": "strongPositive",
+      "condition": "Grossesse",
+      "recommendation": "Utiliser une HBPM à dose curative adaptée au poids."
+    },
+    {
+      "id": "R240",
+      "context": "grossesse",
+      "grade": "strongPositive",
+      "condition": "Post-partum",
+      "recommendation": "Poursuivre l'anticoagulation pendant au moins 6 semaines."
+    },
+    {
+      "id": "R268",
+      "context": "insuffisanceRenale",
+      "grade": "weakNegative",
+      "condition": "Clairance < 30 mL/min",
+      "recommendation": "Éviter les AOD."
+    },
+    {
+      "id": "R269",
+      "context": "insuffisanceRenale",
+      "grade": "weakPositive",
+      "condition": "Insuffisance rénale sévère",
+      "recommendation": "Adapter les doses d'HBPM ou préférer une héparine non fractionnée."
+    },
+    {
+      "id": "R106",
+      "context": "filtreCave",
+      "grade": "strongNegative",
+      "condition": "Anticoagulation possible",
+      "recommendation": "Ne pas poser de filtre cave."
+    },
+    {
+      "id": "R107",
+      "context": "filtreCave",
+      "grade": "weakPositive",
+      "condition": "Contre-indication absolue aux anticoagulants",
+      "recommendation": "Discuter la pose temporaire d'un filtre cave."
+    }
+  ]
+}
