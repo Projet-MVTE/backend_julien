@@ -76,9 +76,6 @@ def preprocess_new_sample(new_sample: dict):
     X = X[y.isin(valid_classes)]
     y = y[y.isin(valid_classes)]
 
-
-
-
     # Dictionary to store LabelEncoders for each categorical column
     label_encoders = {}
 
@@ -87,10 +84,6 @@ def preprocess_new_sample(new_sample: dict):
         X[col] = X[col].astype(str)  # Ensure all categorical values are strings
         X[col] = le.fit_transform(X[col])  # Fit and transform training data
         label_encoders[col] = le  # Store the trained encoder
-
-
-    
-
 
     # Split the data
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, stratify=y, random_state=42)
@@ -142,7 +135,7 @@ def preprocess_new_sample(new_sample: dict):
         # Check for unseen values and replace with most frequent category
         known_classes = set(le.classes_)
         if new_sample_df[col].iloc[0] not in known_classes:
-             print(f"⚠️ Warning: {new_sample_df[col].iloc[0]} not in trained LabelEncoder for {col}")
+             print(f"Warning: {new_sample_df[col].iloc[0]} not in trained LabelEncoder for {col}")
     
         # Apply encoding
         new_sample_df[col] = new_sample_df[col].apply(lambda x: x if x in known_classes else le.classes_[0])
