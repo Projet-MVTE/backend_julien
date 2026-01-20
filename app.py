@@ -577,6 +577,10 @@ def download_recommendations():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+@app.route("/test", methods=["GET"])
+def test():
+    return "Test OK", 200
+
 @app.route('/set_recommendations', methods=['POST'])
 def upload_recommendations():
     """
