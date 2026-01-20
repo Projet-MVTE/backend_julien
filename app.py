@@ -564,19 +564,19 @@ def askIA():
     except Exception as e:
         return jsonify({"Error":e})
 
-
+# -------------------------------------------- RECOMMENDATIONS -------------------------------------------------
 @app.route("/download_recommendations", methods=["GET"])
 def download_recommendations():
     """
     Endpoint pour télécharger le fichier JSON des recommandations MVTE.
     """
     json_file_path = "recommendations.json"
+    print("Fichiers dans le dossier courant:", os.listdir(os.getcwd()))
     try:
         return send_file(json_file_path, as_attachment=True, mimetype='application/json')
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-# -------------------------------------------- RECOMMENDATIONS -------------------------------------------------
 @app.route('/set_recommendations', methods=['POST'])
 def upload_recommendations():
     """
@@ -604,6 +604,5 @@ def upload_recommendations():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
-    import os
     port = int(os.environ.get("PORT", 5000))  # Utilisation du port fourni par Railway
     app.run(host="0.0.0.0", port=port)
