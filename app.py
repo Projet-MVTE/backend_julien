@@ -571,6 +571,45 @@ def askIA():
     except Exception as e:
         return jsonify({"Error":e})
 
+
+@app.route("/download_recommendations", methods=["GET"])
+def download_recommendations():
+    """
+    Endpoint pour télécharger le fichier JSON des recommandations MVTE.
+    """
+    json_file_path = "recommendations.json"
+    try:
+        return send_file(json_file_path, as_attachment=True, mimetype='application/json')
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+# -------------------------------------------- RECOMMENDATIONS -------------------------------------------------
+@app.route('/set_recommendations', methods=['POST'])
+def upload_recommendations():
+    """
+    Endpoint pour mettre à jour le fichier des recommandations.
+    """
+    if 'file' not in request.files:
+        return jsonify({"error": "No file part"}), 400
+
+    file = request.files['file']
+
+    if file.filename == '':
+        return jsonify({"error": "No selected file"}), 400
+
+    try:
+        content = file.read()
+        json.loads(content)  # Vérifie que c'est un JSON valide
+        
+        file.seek(0)
+        file.save("recommendations.json")
+        
+        return jsonify({"message": "Recommendations file uploaded successfully"}), 200
+    except json.JSONDecodeError:
+        return jsonify({"error": "Invalid JSON file"}), 400
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
 if __name__ == "__main__":
     import os
     port = int(os.environ.get("PORT", 5000))  # Utilisation du port fourni par Railway
