@@ -571,15 +571,10 @@ def download_recommendations():
     Endpoint pour télécharger le fichier JSON des recommandations MVTE.
     """
     json_file_path = "recommendations.json"
-    print("Fichiers dans le dossier courant:", os.listdir(os.getcwd()))
     try:
         return send_file(json_file_path, as_attachment=True, mimetype='application/json')
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-
-@app.route("/test", methods=["GET"])
-def test():
-    return "Test OK", 200
 
 @app.route('/set_recommendations', methods=['POST'])
 def upload_recommendations():

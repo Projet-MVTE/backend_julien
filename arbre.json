@@ -46,7 +46,7 @@
         },
         "03": {
             "id": "03",
-            "title": "Thrombose Veineuse Membre sup\u00c3\u00a9rieur (TVMS)",
+            "title": "Thrombose Veineuse Membre supérieur (TVMS)",
             "type": 0,
             "next": [
                 "030",
@@ -72,7 +72,7 @@
         },
         "001": {
             "id": "001",
-            "title": "Non provoqu\u00c3\u00a9 par facteur Majeur transitoire",
+            "title": "Non provoqué par facteur Majeur transitoire",
             "type": 0,
             "next": [
                 "0010",
@@ -99,7 +99,7 @@
         },
         "020": {
             "id": "020",
-            "title": "Membre inf\u00c3\u00a9rieur non provoqu\u00c3\u00a9e par facteur majeur",
+            "title": "Membre inférieur non provoquée par facteur majeur",
             "type": 0,
             "next": [
                 "0200",
@@ -126,7 +126,7 @@
         },
         "023": {
             "id": "023",
-            "title": "Membre sup\u00c3\u00a9rieur",
+            "title": "Membre supérieur",
             "type": 0,
             "next": [
                 "0230",
@@ -135,7 +135,7 @@
         },
         "030": {
             "id": "030",
-            "title": "Sur Cath\u00c3\u00a9ter Centraux",
+            "title": "Sur Cathéter Centraux",
             "type": 0,
             "next": [
                 "0300",
@@ -152,7 +152,7 @@
         },
         "040": {
             "id": "040",
-            "title": "R\u00c3\u00a9cidive Sous traitement bien conduit",
+            "title": "Récidive Sous traitement bien conduit",
             "type": 1,
             "next": []
         },
@@ -189,7 +189,7 @@
         },
         "0011": {
             "id": "0011",
-            "title": "Deuxi\u00c3\u00a8me MVTE non provoqu\u00c3\u00a9 (ou plus) ",
+            "title": "Deuxi\u00c3\u00a8me MVTE non provoqué (ou plus) ",
             "type": 0,
             "next": [
                 "00110"
@@ -214,7 +214,7 @@
         },
         "0102": {
             "id": "0102",
-            "title": "Non provoqu\u00c3\u00a9 par facteur majeur transitoire",
+            "title": "Non provoqué par facteur majeur transitoire",
             "type": 0,
             "next": [
                 "01020",
@@ -280,7 +280,7 @@
         },
         "0230": {
             "id": "0230",
-            "title": "Post catheter / limit\u00c3\u00a9e",
+            "title": "Post catheter / limitée",
             "type": 0,
             "next": [
                 "02300"
@@ -294,7 +294,7 @@
         },
         "0300": {
             "id": "0300",
-            "title": "Fonctionnel, en place et non-infect\u00c3\u00a9",
+            "title": "Fonctionnel, en place et non-infecté",
             "type": 0,
             "next": [
                 "03000"
@@ -302,7 +302,7 @@
         },
         "0301": {
             "id": "0301",
-            "title": "Non fonctionnel, infect\u00c3\u00a9, mal positionn\u00c3\u00a9",
+            "title": "Non fonctionnel, infecté, mal positionné",
             "type": 0,
             "next": [
                 "03010"
@@ -310,7 +310,7 @@
         },
         "0310": {
             "id": "0310",
-            "title": "Symptomatique : anticoagulation curative 3 mois (memes modalit\u00c3\u00a9s TVP MI) ",
+            "title": "Symptomatique : anticoagulation curative 3 mois (memes modalités TVP MI) ",
             "type": 1,
             "next": []
         },
@@ -324,7 +324,7 @@
         },
         "00001": {
             "id": "00001",
-            "title": "2me choix si cancer gastro-intestinal haut non op\u00c3\u00a9r\u00c3\u00a9 ou urog\u00c3\u00a9nital non op\u00c3\u00a9r\u00c3\u00a9 : Rivaroxaban",
+            "title": "2me choix si cancer gastro-intestinal haut non opéré ou urogénital non opéré : Rivaroxaban",
             "type": 0,
             "next": [
                 "000010"
@@ -348,7 +348,7 @@
         },
         "00011": {
             "id": "00011",
-            "title": "en r\u00c3\u00a9mission compl\u00c3\u00a8te",
+            "title": "en rémission compl\u00c3\u00a8te",
             "type": 0,
             "next": [
                 "000110"
@@ -356,7 +356,7 @@
         },
         "00100": {
             "id": "00100",
-            "title": "Provoqu\u00c3\u00a9e par facteur majeur transitoire ###Aide## (Facteur Maj Trans)",
+            "title": "Provoquée par facteur majeur transitoire ###Aide## (Facteur Maj Trans)",
             "type": 0,
             "next": [
                 "001000",
@@ -381,7 +381,7 @@
         },
         "00103": {
             "id": "00103",
-            "title": "1ere EP non provoqu\u00c3\u00a9e haut risque",
+            "title": "1ere EP non provoquée haut risque",
             "type": 0,
             "next": [
                 "001030",
@@ -399,13 +399,13 @@
         },
         "00110": {
             "id": "00110",
-            "title": "AOD dose pleine ou AVK INR 2-3 =>  Non limit\u00c3\u00a9",
+            "title": "AOD dose pleine ou AVK INR 2-3 =>  Non limité",
             "type": 1,
             "next": []
         },
         "01000": {
             "id": "01000",
-            "title": "h\u00c3\u00a9morragie active ",
+            "title": "hémorragie active ",
             "type": 0,
             "next": [
                 "010000"
@@ -413,7 +413,7 @@
         },
         "01001": {
             "id": "01001",
-            "title": "Pas d'hemorragie active mais risque h\u00c3\u00a9morragique \u00c3\u00a9lev\u00c3\u00a9 ",
+            "title": "Pas d'hemorragie active mais risque hémorragique élevé ",
             "type": 0,
             "next": [
                 "010010"
@@ -441,7 +441,7 @@
         },
         "01021": {
             "id": "01021",
-            "title": "Multisegmentaire ou bilat\u00c3\u00a9ral",
+            "title": "Multisegmentaire ou bilatéral",
             "type": 0,
             "next": [
                 "010210",
@@ -456,7 +456,7 @@
         },
         "02010": {
             "id": "02010",
-            "title": ">5cm : Fondaparinux \"dose pr\u00c3\u00a9ventive\"  2,5 mg/SC/J pendant 30-45 jours",
+            "title": ">5cm : Fondaparinux \"dose préventive\"  2,5 mg/SC/J pendant 30-45 jours",
             "type": 1,
             "next": []
         },
@@ -477,7 +477,7 @@
         },
         "02110": {
             "id": "02110",
-            "title": ">5cm : HBPM dose pr\u00c3\u00a9ventive pendant 30-45 jours",
+            "title": ">5cm : HBPM dose préventive pendant 30-45 jours",
             "type": 1,
             "next": []
         },
@@ -498,7 +498,7 @@
         },
         "02210": {
             "id": "02210",
-            "title": ">5cm : Fondaparinux \"dose pr\u00c3\u00a9ventive\"  2,5 mg/SC/J pendant 30-45 jours",
+            "title": ">5cm : Fondaparinux \"dose préventive\"  2,5 mg/SC/J pendant 30-45 jours",
             "type": 0,
             "next": [
                 "022100"
@@ -515,7 +515,7 @@
         },
         "02300": {
             "id": "02300",
-            "title": "Retrait cath\u00c3\u00a9ter / AINS local",
+            "title": "Retrait cathéter / AINS local",
             "type": 1,
             "next": []
         },
@@ -533,19 +533,19 @@
         },
         "000000": {
             "id": "000000",
-            "title": ">6mois et tant que maladie est active ou n\u00c3\u00a9cessite un traitement sp\u00c3\u00a9cifique",
+            "title": ">6 mois et tant que maladie est active ou nécessite un traitement spécifique",
             "type": 1,
             "next": []
         },
         "000010": {
             "id": "000010",
-            "title": ">6mois et tant que maladie est active ou n\u00c3\u00a9cessite un traitement sp\u00c3\u00a9cifique",
+            "title": ">6 mois et tant que maladie est active ou nécessite un traitement spécifique",
             "type": 1,
             "next": []
         },
         "000020": {
             "id": "000020",
-            "title": ">6mois et tant que maladie est active ou n\u00c3\u00a9cessite un traitement sp\u00c3\u00a9cifique",
+            "title": ">6 mois et tant que maladie est active ou nécessite un traitement spécifique",
             "type": 1,
             "next": []
         },
@@ -559,7 +559,7 @@
         },
         "000110": {
             "id": "000110",
-            "title": "AOD 6mois 1ere int",
+            "title": "AOD 6 mois 1ere int",
             "type": 1,
             "next": []
         },
@@ -584,25 +584,25 @@
         },
         "001010": {
             "id": "001010",
-            "title": "AVK INR 2-3, Dur\u00c3\u00a9e Non limit\u00c3\u00a9",
+            "title": "AVK INR 2-3, Durée Non limité",
             "type": 1,
             "next": []
         },
         "001020": {
             "id": "001020",
-            "title": "AOD dose pleine ou AVK INR 2-3,  Non limit\u00c3\u00a9",
+            "title": "AOD dose pleine ou AVK INR 2-3,  Non limité",
             "type": 1,
             "next": []
         },
         "001030": {
             "id": "001030",
-            "title": "AOD dose pleine, Non limit\u00c3\u00a9 ",
+            "title": "AOD dose pleine, Non limité ",
             "type": 1,
             "next": []
         },
         "001031": {
             "id": "001031",
-            "title": "AVK INR 2-3, Non limit\u00c3\u00a9",
+            "title": "AVK INR 2-3, Non limité",
             "type": 1,
             "next": []
         },
@@ -635,7 +635,7 @@
         },
         "010010": {
             "id": "010010",
-            "title": "Anticoagulation pr\u00c3\u00a9ventive 6s",
+            "title": "Anticoagulation préventive 6s",
             "type": 0,
             "next": [
                 "0100100",
@@ -652,7 +652,7 @@
         },
         "010101": {
             "id": "010101",
-            "title": "2me choix SAUF si cancer gastro-intestinal haut non op\u00c3\u00a9r\u00c3\u00a9 ou urog\u00c3\u00a9nital non op\u00c3\u00a9r\u00c3\u00a9 : Rivaroxaban",
+            "title": "2me choix SAUF si cancer gastro-intestinal haut non opéré ou urogénital non opéré : Rivaroxaban",
             "type": 0,
             "next": [
                 "0101010"
@@ -668,7 +668,7 @@
         },
         "010200": {
             "id": "010200",
-            "title": "1er Episode non provoqu\u00c3\u00a9",
+            "title": "1er Episode non provoqué",
             "type": 0,
             "next": [
                 "0102000",
@@ -677,7 +677,7 @@
         },
         "010201": {
             "id": "010201",
-            "title": "2eme \u00c3\u00a9pisode non provoqu\u00c3\u00a9e",
+            "title": "2eme épisode non provoquée",
             "type": 0,
             "next": [
                 "0102010",
@@ -686,7 +686,7 @@
         },
         "010202": {
             "id": "010202",
-            "title": ">3eme Episode non provoqu\u00c3\u00a9",
+            "title": ">3eme Episode non provoqué",
             "type": 0,
             "next": [
                 "0102020"
@@ -702,7 +702,7 @@
         },
         "010211": {
             "id": "010211",
-            "title": "Pas de risque h\u00c3\u00a9morragique \u00c3\u00a9lev\u00c3\u00a9",
+            "title": "Pas de risque hémorragique élevé",
             "type": 0,
             "next": [
                 "0102110"
@@ -716,25 +716,25 @@
         },
         "020111": {
             "id": "020111",
-            "title": "Pluri segmentaire : Fondaparinux dose pr\u00c3\u00a9ventive 2,5 mg/SC/J pendant 30-45 jours ",
+            "title": "Pluri segmentaire : Fondaparinux dose préventive 2,5 mg/SC/J pendant 30-45 jours ",
             "type": 1,
             "next": []
         },
         "021110": {
             "id": "021110",
-            "title": "Unique courte : surveillance \u00c3\u00a9chographique \u00c3\u00a0 J10",
+            "title": "Unique courte : surveillance échographique \u00c3\u00a0 J10",
             "type": 1,
             "next": []
         },
         "021111": {
             "id": "021111",
-            "title": "bilat\u00c3\u00a9rales  ou tres symptomatiques : HBPM dose pr\u00c3\u00a9ventive pendant grossesse + 6 sem post partum ",
+            "title": "bilatérales  ou tres symptomatiques : HBPM dose préventive pendant grossesse + 6 sem post partum ",
             "type": 1,
             "next": []
         },
         "022100": {
             "id": "022100",
-            "title": "Si extension constat\u00c3\u00a9e par Echo doppler Anticoagulation curative pendant 3 mois",
+            "title": "Si extension constatée par Echo doppler Anticoagulation curative pendant 3 mois",
             "type": 1,
             "next": []
         },
@@ -746,7 +746,7 @@
         },
         "022111": {
             "id": "022111",
-            "title": "Pluri segmentaire : Fondaparinux dose pr\u00c3\u00a9ventive 2,5 mg/SC/J pendant 30-45 jours ",
+            "title": "Pluri segmentaire : Fondaparinux dose préventive 2,5 mg/SC/J pendant 30-45 jours ",
             "type": 0,
             "next": [
                 "0221110"
@@ -754,7 +754,7 @@
         },
         "0001000": {
             "id": "0001000",
-            "title": ">6mois et tant que maladie est active ou n\u00c3\u00a9cessite un traitement sp\u00c3\u00a9cifique",
+            "title": ">6 mois et tant que maladie est active ou nécessite un traitement spécifique",
             "type": 1,
             "next": []
         },
@@ -870,19 +870,19 @@
         },
         "0101000": {
             "id": "0101000",
-            "title": ">6mois et tant que maladie est active ou n\u00c3\u00a9cessite un traitement sp\u00c3\u00a9cifique",
+            "title": ">6 mois et tant que maladie est active ou nécessite un traitement spécifique",
             "type": 1,
             "next": []
         },
         "0101010": {
             "id": "0101010",
-            "title": ">6mois et tant que maladie est active ou n\u00c3\u00a9cessite un ttt sp\u00c3\u00a9cifique",
+            "title": ">6 mois et tant que maladie est active ou nécessite un ttt spécifique",
             "type": 1,
             "next": []
         },
         "0101020": {
             "id": "0101020",
-            "title": ">6mois et tant que maladie est active ou n\u00c3\u00a9cessite un ttt sp\u00c3\u00a9cifique",
+            "title": ">6 mois et tant que maladie est active ou nécessite un ttt spécifique",
             "type": 1,
             "next": []
         },
@@ -896,7 +896,7 @@
         },
         "0102001": {
             "id": "0102001",
-            "title": "Pas de risque h\u00c3\u00a9morragique \u00c3\u00a9lev\u00c3\u00a9",
+            "title": "Pas de risque hémorragique élevé",
             "type": 0,
             "next": [
                 "01020010"
@@ -912,7 +912,7 @@
         },
         "0102011": {
             "id": "0102011",
-            "title": "Pas de risque h\u00c3\u00a9morragique \u00c3\u00a9lev\u00c3\u00a9",
+            "title": "Pas de risque hémorragique élevé",
             "type": 0,
             "next": [
                 "01020110"
@@ -920,7 +920,7 @@
         },
         "0102020": {
             "id": "0102020",
-            "title": "Zone d'incertitude : discuter anticoagulation illimit\u00c3\u00a9 en fonction risque h\u00c3\u00a9morragique et volont\u00c3\u00a9 patient",
+            "title": "Zone d'incertitude : discuter anticoagulation illimité en fonction risque hémorragique et volonté patient",
             "type": 1,
             "next": []
         },
@@ -941,7 +941,7 @@
         },
         "0221110": {
             "id": "0221110",
-            "title": "Si extension constat\u00c3\u00a9e par Echo doppler Anticoagulation curative pendant 3 mois",
+            "title": "Si extension constatée par Echo doppler Anticoagulation curative pendant 3 mois",
             "type": 1,
             "next": []
         },
@@ -971,7 +971,7 @@
         },
         "00100011": {
             "id": "00100011",
-            "title": "F\u00c3\u00a9morale ou plus distale",
+            "title": "Fémorale ou plus distale",
             "type": 0,
             "next": [
                 "001000110"
@@ -1207,7 +1207,7 @@
         },
         "001001011": {
             "id": "001001011",
-            "title": "F\u00c3\u00a9morale ou plus distale",
+            "title": "Fémorale ou plus distale",
             "type": 0,
             "next": [
                 "0010010110"
@@ -1269,25 +1269,25 @@
         },
         "001040000": {
             "id": "001040000",
-            "title": "AOD dose pleine  6 mois  puis  non traitememnt illimit\u00c3\u00a9 au choix: demie dose AOD ou dose pleine AOD ",
+            "title": "AOD dose pleine  6 mois  puis  non traitememnt illimité au choix: demie dose AOD ou dose pleine AOD ",
             "type": 1,
             "next": []
         },
         "001040001": {
             "id": "001040001",
-            "title": "AVK INR 2-3 =>  Non limit\u00c3\u00a9",
+            "title": "AVK INR 2-3 =>  Non limité",
             "type": 1,
             "next": []
         },
         "001040010": {
             "id": "001040010",
-            "title": "Zone d'incertitude : contacter centre expert [options : 1) AOD dose pleine  ou AVK 6 mois 2) ou illimit\u00c3\u00a9 ]",
+            "title": "Zone d'incertitude : contacter centre expert [options : 1) AOD dose pleine  ou AVK 6 mois 2) ou illimité ]",
             "type": 1,
             "next": []
         },
         "001040100": {
             "id": "001040100",
-            "title": "Zone d'incertitude : contacter centre expert 1) AOD dose pleine  ou AVK 6 mois 2) ou illimit\u00c3\u00a9  ",
+            "title": "Zone d'incertitude : contacter centre expert 1) AOD dose pleine  ou AVK 6 mois 2) ou illimité  ",
             "type": 1,
             "next": []
         },
@@ -1323,7 +1323,7 @@
         },
         "001041100": {
             "id": "001041100",
-            "title": "AOD dose pleine  6 mois  puis  non traitememnt illimit\u00c3\u00a9 au choix: demie dose AOD ou dose pleine AOD ",
+            "title": "AOD dose pleine  6 mois  puis  non traitememnt illimité au choix: demie dose AOD ou dose pleine AOD ",
             "type": 1,
             "next": []
         },
@@ -1427,7 +1427,7 @@
         },
         "0010011011": {
             "id": "0010011011",
-            "title": "F\u00c3\u00a9morale ou plus distale",
+            "title": "Fémorale ou plus distale",
             "type": 0,
             "next": [
                 "00100110110"
@@ -1459,7 +1459,7 @@
         },
         "0010012011": {
             "id": "0010012011",
-            "title": "F\u00c3\u00a9morale ou plus dist",
+            "title": "Fémorale ou plus dist",
             "type": 0,
             "next": [
                 "00100120110"
@@ -1491,7 +1491,7 @@
         },
         "0010012111": {
             "id": "0010012111",
-            "title": "F\u00c3\u00a9morale ou plus dist",
+            "title": "Fémorale ou plus dist",
             "type": 0,
             "next": [
                 "00100121110"
@@ -1499,31 +1499,31 @@
         },
         "0010410000": {
             "id": "0010410000",
-            "title": "AOD 6mois 1ere int",
+            "title": "AOD 6 mois 1ere int",
             "type": 1,
             "next": []
         },
         "0010410100": {
             "id": "0010410100",
-            "title": "AOD dose pleine  6 mois  puis traitememnt illimit\u00c3\u00a9 au choix: demie dose AOD ou dose pleine AOD ",
+            "title": "AOD dose pleine  6 mois  puis traitememnt illimité au choix: demie dose AOD ou dose pleine AOD ",
             "type": 1,
             "next": []
         },
         "0010410110": {
             "id": "0010410110",
-            "title": "Zone d'incertitude : contacter centre expert 1) AOD dose pleine  ou AVK 6 mois 2) a discuter illimit\u00c3\u00a9  ",
+            "title": "Zone d'incertitude : contacter centre expert 1) AOD dose pleine  ou AVK 6 mois 2) a discuter illimité  ",
             "type": 1,
             "next": []
         },
         "0010411100": {
             "id": "0010411100",
-            "title": "AOD dose pleine ou AVK 6mois 1ere int",
+            "title": "AOD dose pleine ou AVK 6 mois 1ere int",
             "type": 1,
             "next": []
         },
         "0010411110": {
             "id": "0010411110",
-            "title": "Zone d'incertitude : contacter centre expert 1) AOD dose pleine  ou AVK 6 mois 2) a discuter illimit\u00c3\u00a9  ",
+            "title": "Zone d'incertitude : contacter centre expert 1) AOD dose pleine  ou AVK 6 mois 2) a discuter illimité  ",
             "type": 1,
             "next": []
         },
@@ -1617,13 +1617,13 @@
         },
         "001001100100": {
             "id": "001001100100",
-            "title": "dernier mois de grossesse : HBPM en 2xpar jour +derni\u00c3\u00a8re injection 12h avant d\u00c3\u00a9clenchement ",
+            "title": "dernier mois de grossesse : HBPM en 2xpar jour +derni\u00c3\u00a8re injection 12h avant déclenchement ",
             "type": 1,
             "next": []
         },
         "001001101100": {
             "id": "001001101100",
-            "title": "dernier mois de grossesse : HBPM en 2xpar jour +derni\u00c3\u00a8re injection 12h avant d\u00c3\u00a9clenchement ",
+            "title": "dernier mois de grossesse : HBPM en 2xpar jour +derni\u00c3\u00a8re injection 12h avant déclenchement ",
             "type": 1,
             "next": []
         }
